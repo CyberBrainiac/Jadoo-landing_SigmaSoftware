@@ -1,2 +1,3 @@
 # Jadoo-landing_SigmaSoftware
-second project in Sigma Software university
+
+This brang used to test new features in projects
