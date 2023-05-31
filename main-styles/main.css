@@ -1,2 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "Google-Sans-Medium";
+  src: url("../fonts/Google-Sans/GoogleSans-Medium.woff") format("woff"), url("../fonts/Google-Sans/GoogleSans-Medium.woff2") format("woff2"), url("../fonts/Google-Sans/GoogleSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: fallback;
+}
 /*Colors*/
-/*Font and typography*//*# sourceMappingURL=main.css.map */
+/*Font and typography*/
+.logo {
+  padding-left: 10px;
+}
+.logo img {
+  width: 7.1875rem;
+  height: auto;
+}
+
+.header-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.header-controls__language {
+  font-size: 17px;
+  color: #212832;
+  font-family: "Google-Sans-Medium", sans-serif;
+}
+.header-controls__language::after {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  padding-left: 6px;
+  background-image: url("../common.blocks/header/header-controls/half-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-controls__menu-icon {
+  background-image: url("../common.blocks/header/header-controls/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.header {
+  background-color: #FFF1DA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+}
+
+.dropdown-menu {
+  background-color: #FFF1DA;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 40px 0 70px 0;
+}
+.dropdown-menu__elem {
+  text-decoration: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.dropdown-menu__elem a {
+  color: #737373;
+}
+.dropdown-menu__elem:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=main.css.map */

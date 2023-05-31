@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: 'Google-Sans-Medium';
+  src:  url('../fonts/Google-Sans/GoogleSans-Medium.woff') format('woff'),
+        url('../fonts/Google-Sans/GoogleSans-Medium.woff2') format('woff2'),
+        url('../fonts/Google-Sans/GoogleSans-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-display: fallback;
+}
+
 /*Colors*/
 $header-bg-color: #FFF1DA;
-$header-menu-color: #737373;
 
 /*Font and typography*/
 $h1-font-size: 2rem;
+
 
