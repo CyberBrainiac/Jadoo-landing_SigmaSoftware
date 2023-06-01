@@ -1,0 +1,28 @@
+@import "cta/cta.scss";
+@import "airplane/airplane.scss";
+
+.hero {
+  position: relative;
+  text-align: left;
+
+  &__header-text {
+    @include head-1();
+    border-bottom: 1px solid $page-bg-color;
+    margin: 0 15px 40px 60px;
+    padding-top: 60px;
+  }
+
+  &__background-image {
+    position: absolute;
+    top: 26%;
+    left: 73vw;
+    width: 27vw;
+    height: 166px;
+    @include backgroundImage("../common.blocks/hero/hero-background-plus.svg");
+    background-position: initial;
+
+    @media screen and (max-width: 411.88px){
+      top: 33%;
+    }
+  }
+}

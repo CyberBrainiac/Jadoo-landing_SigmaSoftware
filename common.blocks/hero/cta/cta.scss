@@ -1,0 +1,29 @@
+.cta {
+  width: 41%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: $page-bg-color;
+
+  &__find-more-button {
+    @include cta-find-more-b();
+  }
+
+  &__play-demo-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    span {
+      font-family: $Poppins;
+      font-weight: 500;
+      font-size: 17px;
+      color: #686D77;
+    }
+  }
+
+  &__play-demo-button {
+    @include cta-play-demo-b();
+  }
+}

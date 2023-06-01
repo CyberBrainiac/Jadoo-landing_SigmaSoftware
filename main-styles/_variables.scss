@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Volkhov:wght@700&display=swap');
+
+
 
 @font-face {
-  font-family: 'Google-Sans-Medium';
+  font-family: 'Google-Sans-medium';
   src:  url('../fonts/Google-Sans/GoogleSans-Medium.woff') format('woff'),
         url('../fonts/Google-Sans/GoogleSans-Medium.woff2') format('woff2'),
         url('../fonts/Google-Sans/GoogleSans-Medium.ttf') format('truetype');
@@ -11,8 +13,13 @@
 
 /*Colors*/
 $header-bg-color: #FFF1DA;
+$page-bg-color: #FFF;
+$header-color: #181E4B;
 
 /*Font and typography*/
 $h1-font-size: 2rem;
+$Volkhov-bold: 'Volkhov', serif;
+$Google-Sans-medium: 'Google-Sans-medium', sans-serif; 
+$Poppins: 'Poppins', sans-serif;
 
 

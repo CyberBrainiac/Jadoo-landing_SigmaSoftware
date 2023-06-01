@@ -1,0 +1,17 @@
+.airplane {
+  position: absolute;
+  top: 4%;
+  left: 1%;
+  transform: translateY(-30px);
+
+  &__picture {
+    @include backgroundImage('../images/airplane.svg');
+    background-size: cover;
+    width: 115px;
+    height: 100px;
+
+    &:hover {
+      animation: notTheBestFlight 3s linear 0s 1 normal none;
+    }
+  }
+}

@@ -7,7 +7,7 @@
   &__language {
     font-size: 17px;
     color: #212832;
-    font-family: 'Google-Sans-Medium', sans-serif;
+    font-family: $Google-Sans-medium;
   
     &::after {
       content: '';
@@ -25,5 +25,6 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
+    margin-right: 30px;
   }
 }

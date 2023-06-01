@@ -3,3 +3,34 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@mixin head-1() {
+  color: #181E4B;
+  font-family: $Volkhov-bold;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 89px;
+}
+
+@mixin cta-find-more-b() {
+  display: block;
+  background-color: #F1A501;
+  color: #FFF;
+  border-radius: 10px;
+  font-family: $Google-Sans-medium;
+  font-size: 18px;
+  padding: 16px 24px;
+  width: 122px;
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+}
+
+@mixin cta-play-demo-b() {
+  background-color: #DF6951;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  @include backgroundImage("../common.blocks/hero/cta/triangle-play.svg");
+  background-position-x: 55%;
+  box-shadow: 0px 15px 30px 0px rgba(223, 105, 81, 0.3);
+  margin-right: 20px;
+}

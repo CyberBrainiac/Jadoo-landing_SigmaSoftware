@@ -2,10 +2,12 @@
 @import "header-controls/header-controls.scss";
 
 .header {
-  background-color: $header-bg-color;
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding-top: 30px;
+  z-index: 3;
+  width: 100%;
 }
 
 
