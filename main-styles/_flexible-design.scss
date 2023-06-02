@@ -1,0 +1,14 @@
+@media screen and (max-width: 411.88px) {
+
+/*HERO SECTION*/
+  div.hero__background-image {
+    top: 66vh;
+  }
+
+/*CATEGORY SECTION*/
+  div.category::after {
+    top: 78%;
+    width: 38%;
+    height: 30%;
+  }
+}

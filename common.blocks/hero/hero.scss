@@ -20,9 +20,5 @@
     height: 166px;
     @include backgroundImage("../common.blocks/hero/hero-background-plus.svg");
     background-position: initial;
-
-    @media screen and (max-width: 411.88px){
-      top: 66vh;
-    }
   }
 }
