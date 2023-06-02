@@ -1,2 +1,4 @@
 # Jadoo-landing_SigmaSoftware
-second project in Sigma Software university
+### Second project in Sigma Software university
+
+Flexible design up to 320 pixels wide
