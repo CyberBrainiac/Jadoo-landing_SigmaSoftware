@@ -25,3 +25,8 @@ footer, header, nav  {
 body { line-height: 1; }
 ul { list-style: none; }
 a { text-decoration: none;}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-spacing: 0px;
+}

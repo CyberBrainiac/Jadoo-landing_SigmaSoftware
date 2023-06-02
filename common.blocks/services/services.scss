@@ -1,0 +1,33 @@
+@import "category/category.scss";
+
+.services {
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+
+  &__header-section-text {
+    padding-top: 20px;
+    @include head-3();
+  }
+
+  &__header-benefit-text {
+    padding-top: 40px;
+    @include head-2();
+  }
+
+  &__mobile-menu {
+    color: $second-text-color;
+    font-family: $Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+
+  &__cta {
+    color: #E21A1A;
+    font-family: $Google-Sans-medium;
+    font-size: 18px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+}

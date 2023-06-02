@@ -14,7 +14,7 @@
 
   &__background-image {
     position: absolute;
-    top: 26%;
+    top: 53vh;
     left: 73vw;
     width: 27vw;
     height: 166px;
@@ -22,7 +22,7 @@
     background-position: initial;
 
     @media screen and (max-width: 411.88px){
-      top: 33%;
+      top: 66vh;
     }
   }
 }

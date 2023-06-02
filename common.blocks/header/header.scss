@@ -1,12 +1,13 @@
 @import "logo/logo.scss";
 @import "header-controls/header-controls.scss";
+@import "header-controls/language/language.scss";
+@import "header-controls/dropdown-menu/dropdown-menu.scss";
 
 .header {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  z-index: 3;
   width: 100%;
 }
 

@@ -2,39 +2,23 @@
 @import "mixins";
 @import "animation";
 @import "../common.blocks/header/header.scss";
-@import "../common.blocks/dropdown-menu/dropdown-menu.scss";
 @import "../common.blocks/hero/hero.scss";
+@import "../common.blocks/services/services.scss";
 
 
-.t0 {
-  text-align: center;
-}
 
-.t1 {
-  position: relative;
-  height: 100px;
-  background-color: red;
-  font-size: 40px;
-  transition: 0.3s;
 
-  &:hover {
-    font-size: 60px;
-    transform: scale(120%);
-  }
-}
 
-.t2 {
-  position: relative;
-  height: 100px;
-  background-color: blue;
-  font-size: 40px;
-  transition: 0.3s;
 
-  &:hover {
-    font-size: 60px;
-    transform: scale(120%);
-  }
-}
+
+
+
+
+
+
+
+
+
 
 
 

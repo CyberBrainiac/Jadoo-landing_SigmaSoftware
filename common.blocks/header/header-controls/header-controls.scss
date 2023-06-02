@@ -3,28 +3,4 @@
   align-items: center;
   flex-direction: row;
   column-gap: 20px;
-
-  &__language {
-    font-size: 17px;
-    color: #212832;
-    font-family: $Google-Sans-medium;
-  
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 0.8rem;
-      height: 0.8rem;
-      padding-left: 6px;
-      @include backgroundImage('../common.blocks/header/header-controls/half-arrow-down.svg');
-    }
-  }
-
-  &__menu-icon {
-    @include backgroundImage('../common.blocks/header/header-controls/icon-menu.svg');
-    background-size: contain;
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 30px;
-  }
 }

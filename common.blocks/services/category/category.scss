@@ -1,0 +1,35 @@
+.category {
+  width: 66%;
+  min-width: 120px;
+  margin: 0 auto;
+  border-radius: 36px;
+  background-color: $page-bg-color;
+  text-align: center;
+  margin-top: 40px;
+
+  &__img {
+    width: 120px;
+    height: 90px;
+    margin: 0 auto
+  }
+
+  & #radar { @include backgroundImage("../common.blocks/services/category/category_radar.png"); }
+
+  & #airplane { @include backgroundImage("../common.blocks/services/category/category_plane.png"); }
+
+  &__header-text {
+    @include head-4();
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 67%;
+    margin: 0 auto;
+    font-family: $Poppins;
+    font-size: 16px;
+    color: $main-text-color;
+    line-height: 26px;
+    font-weight: 500;
+  }
+}

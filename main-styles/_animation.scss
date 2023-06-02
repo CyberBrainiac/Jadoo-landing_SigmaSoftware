@@ -1,13 +1,8 @@
 @keyframes notTheBestFlight{
-  0% {
-  }
   80% {
-      transform:  translate(40vw, -40vh);
-  }
-  90% {
-      transform:  translate(43vw, -43vh) rotate(80deg);
+    transform:  translate(30vw, -30vh);
   }
   100% {
-      transform:  translate(100vw, 110vh);
+    transform:  translate(33vw, -33vh) rotate(80deg);
   }
 }

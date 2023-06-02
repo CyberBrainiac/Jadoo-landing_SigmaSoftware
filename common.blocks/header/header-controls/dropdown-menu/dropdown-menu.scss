@@ -1,0 +1,60 @@
+.dropdown-menu {
+  &__icon {
+    @include backgroundImage('../common.blocks/header/header-controls/dropdown-menu/icon-menu.svg');
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 30px;
+  }
+
+  &__content {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    background-color: $header-bg-color;
+    font-family: $Poppins;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 160px 0 70px 0;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  &:hover {
+    .dropdown-menu__content {
+      top: 0;
+    }
+  }
+
+  &__elem {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    padding-bottom: 20px;
+  
+    a {
+      color: $second-text-color;
+      transition: 0.2s;
+      display: block;
+      margin: auto 0;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+      &:hover {
+        color: $h1-text-color;
+        font-size: 1.4em;
+      }
+    }
+  
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

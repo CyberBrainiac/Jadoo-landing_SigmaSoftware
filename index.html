@@ -15,19 +15,28 @@
     </div>
 
     <div class="header-controls">
-      <div class="header-controls__language">EN</div>
-      <div class="header-controls__menu-icon"></div>
+      <div class="language">
+        <div class="language__btn">
+          <span>EN</span>
+        </div>
+        <div class="language__icon"></div>
+        <div class="language__dropdown-content">
+          <p class="language__elem">UA</p>
+          <p class="language__elem">FR</p>
+        </div>
+      </div>
+      
+      <nav class="dropdown-menu">
+        <div class="dropdown-menu__icon"></div>
+        <ul class="dropdown-menu__content">
+          <li class="dropdown-menu__elem"><a href="#">Destination</a></li>
+          <li class="dropdown-menu__elem"><a href="#">Hotels</a></li>
+          <li class="dropdown-menu__elem"><a href="#">Flights</a></li>
+          <li class="dropdown-menu__elem"><a href="#">Booking</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-
-  <nav class="dropdown-menu">
-    <ul>
-      <li class="dropdown-menu__elem"><a href="#">Destination</a></li>
-      <li class="dropdown-menu__elem"><a href="#">Hotels</a></li>
-      <li class="dropdown-menu__elem"><a href="#">Flights</a></li>
-      <li class="dropdown-menu__elem"><a href="#">Booking</a></li>
-    </ul>
-  </nav>
 
   <div class="hero">
     <h1 class="hero__header-text">Travel, enjoy and live a new and full life</h1>
@@ -47,37 +56,27 @@
   </div>
 
   <div class="services">
-    <h3 class="services__header-section-text"></h3>
+    <h3 class="services__header-section-text">CATEGORY</h3>
     <h2 class="services__header-benefit-text">We Offer Best Services</h2>
-    <p>More</p>
+
     <div class="category">
-      <img src="" alt="radar">
+      <div class="services__mobile-menu">More</div>
+      <div class="category__img" id="radar"></div>
       <h3 class="category__header-text">Calculated Weather</h3>
-      <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+      <p class="category__text">Built Wicket longer admire do barton vanity itself do in it.</p>
     </div>
-    
-    <div class="category active(виділення)">
-      <img src="" alt="radar">
+    <div class="category">
+      <div class="category__img" id="airplane"></div>
       <h3 class="category__header-text">Best Flights</h3>
-      <p>Engrossed listening. Park gate sell they west hard for the.</p>
+      <p class="category__text">Engrossed listening. Park gate sell they west hard for the.</p>
     </div>
+    <div class="services__cta">Find out more</div>
   </div>
-
-<nav class="t0">
-  <ul>
-    <li class="t1">
-      <a href="#">CONTENT</a>
-    </li>
-    <li class="t2">
-      <a href="#">More content</a>
-    </li>
-  </ul>
-</nav>
-
 
   <main class="content"></main>
   <footer class="footer"></footer>
 </body>
 </html>
+
 
 
