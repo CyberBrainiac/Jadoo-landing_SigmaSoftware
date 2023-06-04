@@ -16,6 +16,19 @@
           <img src="common.blocks/header/logo/logo.svg" alt="Jadoo logotype" />
         </div>
 
+        <nav class="common-menu">
+          <ul class="common-menu__content">
+            <li class="common-menu__elem"><a href="#">Destination</a></li>
+            <li class="common-menu__elem"><a href="#">Hotels</a></li>
+            <li class="common-menu__elem"><a href="#">Flights</a></li>
+            <li class="common-menu__elem"><a href="#">Booking</a></li>
+          </ul>
+          <div class="common-menu__sign-up">
+            <span id="login">Login</span>
+            <span id="sign-up">Sign up</span>
+          </div>
+        </nav>
+
         <div class="header-controls">
           <div class="language">
             <div class="language__btn">
@@ -41,9 +54,17 @@
       </header>
 
       <div class="hero">
+        <p class="hero__tegline">Best Destinations around the world</p>
         <h1 class="hero__header-text">
           Travel, enjoy and live a new and full life
         </h1>
+        <p class="hero__description">
+          Built Wicket longer admire do barton vanity itself do in it. Preferred
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
+        </p>
+        <div class="hero__background-image"></div>
+
         <div class="cta">
           <a
             href="http://reminders.findmoore.net/"
@@ -55,10 +76,11 @@
             <span>Play Demo</span>
           </div>
         </div>
-        <div class="hero__background-image">
-          <div class="hero__background-image_allImage"></div>
+
+        <div class="airplane" id="airplane-1">
+          <div class="airplane__picture"></div>
         </div>
-        <div class="airplane">
+        <div class="airplane" id="airplane-2">
           <div class="airplane__picture"></div>
         </div>
       </div>
@@ -70,56 +92,77 @@
         <div class="category">
           <div class="services__mobile-menu">More</div>
           <div class="category__img" id="radar"></div>
-          <h3 class="category__header-text">Calculated Weather</h3>
+          <h5 class="category__header-text">Calculated Weather</h5>
           <p class="category__text">
             Built Wicket longer admire do barton vanity itself do in it.
           </p>
         </div>
         <div class="category">
           <div class="category__img" id="airplane"></div>
-          <h3 class="category__header-text">Best Flights</h3>
+          <h5 class="category__header-text">Best Flights</h5>
           <p class="category__text">
             Engrossed listening. Park gate sell they west hard for the.
+          </p>
+        </div>
+        <div class="category">
+          <div class="category__img" id="microphone"></div>
+          <h5 class="category__header-text">Local Events</h5>
+          <p class="category__text">
+            Barton vanity itself do in it. Preferd to men it engrossed
+            listening.
+          </p>
+        </div>
+        <div class="category">
+          <div class="category__img" id="gear"></div>
+          <h5 class="category__header-text">Customization</h5>
+          <p class="category__text">
+            We deliver outsourced aviation services for military customers.
           </p>
         </div>
         <div class="services__cta">Find out more</div>
       </div>
 
       <div class="destinations">
-        <h3 class="destinations__header-section-text">Top Selling</h3>
+        <h5 class="destinations__header-section-text">Top Selling</h5>
         <h2 class="destinations__header-benefit-text">Top Destination</h2>
         <div class="destinations__background-image"></div>
 
         <div class="destination">
           <figure class="destination__img" id="rome">
-            <img src="" alt="ancient Coliseum in sun shines with clear sky" />
+            <img
+              src="common.blocks/destinations/destination/Coliseum.png"
+              alt="ancient Coliseum in sun shines with clear sky"
+            />
             <figcaption class="destination__caption">
-              <span class="destination__name">Rome, Italty</span>
-              <span class="destination__price">$5,42k</span>
-              <span class="destination__duration">10 Days Trip</span>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="destination">
-          <figure class="destination__img" id="london">
-            <img src="" alt="sophisticated Big Ben in evening" />
-            <figcaption class="destination__caption">
-              <span class="destination__name">London, UK</span>
-              <span class="destination__price">$4,2k</span>
-              <span class="destination__duration">12 Days Trip</span>
+              <p class="destination__name">Rome, Italty</p>
+              <p class="destination__price">$5,42k</p>
+              <p class="destination__duration">10 Days Trip</p>
             </figcaption>
           </figure>
         </div>
         <div class="destination">
           <figure class="destination__img" id="london">
             <img
-              src=""
+              src="common.blocks/destinations/destination/Big-Ben.png"
+              alt="sophisticated Big Ben in evening"
+            />
+            <figcaption class="destination__caption">
+              <p class="destination__name">London, UK</p>
+              <p class="destination__price">$4,2k</p>
+              <p class="destination__duration">12 Days Trip</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="destination">
+          <figure class="destination__img" id="london">
+            <img
+              src="common.blocks/destinations/destination/Helsinki-Cathedral.png"
               alt="impressive neoclassical masterpiece Helsinki Cathedral"
             />
             <figcaption class="destination__caption">
-              <span class="destination__name">Full Europe</span>
-              <span class="destination__price">$15k</span>
-              <span class="destination__duration">28 Days Trip</span>
+              <p class="destination__name">Full Europe</p>
+              <p class="destination__price">$15k</p>
+              <p class="destination__duration">28 Days Trip</p>
             </figcaption>
           </figure>
         </div>
@@ -131,7 +174,7 @@
         </h2>
         <div class="book-trip__background-image"></div>
         <div class="three-steps">
-          <div class="three-steps__background-image" id="1"></div>
+          <div class="three-steps__icon" id="1"></div>
           <div class="three-steps_text-content">
             <p class="three-steps__head-text">Choose Destination</p>
             <p class="three-steps__common-text">
@@ -140,7 +183,7 @@
             </p>
           </div>
 
-          <div class="three-steps__background-image" id="2"></div>
+          <div class="three-steps__icon" id="2"></div>
           <div class="three-steps_text-content">
             <p class="three-steps__head-text">Make Payment</p>
             <p class="three-steps__common-text">
@@ -149,7 +192,7 @@
             </p>
           </div>
 
-          <div class="three-steps__background-image" id="3"></div>
+          <div class="three-steps__icon" id="3"></div>
           <div class="three-steps_text-content">
             <p class="three-steps__head-text">Reach Airport on Selected Date</p>
             <p class="three-steps__common-text">
@@ -159,10 +202,189 @@
           </div>
         </div>
 
-        <div class="img-card"></div>
+        <div class="trip-card">
+          <div class="trip-card__img-container">
+            <figure class="trip-card__img">
+              <img
+                src="common.blocks/book-trip/trip-card/greece.png"
+                alt="bright white Greek houses with sky-colored roofs on the rocky shores of the island"
+              />
+            </figure>
+            <div class="trip-card__caption">
+              <h4 class="trip-card__name">Trip To Greece</h4>
+              <p class="trip-card__duration">
+                <time datetime="2023-06-14">14</time>
+                <span>-</span>
+                <time datetime="2023-06-29">June 26</time>
+                <span>June</span>
+                <span>|</span>
+                <span class="trip-card__trip-author">by Robbin joseph</span>
+              </p>
+              <div class="trip-card__options">
+                <div class="trip-card__option-icon" id="leaf"></div>
+                <div class="trip-card__option-icon" id="map"></div>
+                <div class="trip-card__option-icon" id="send"></div>
+              </div>
+              <div class="trip-card__social-metrics">
+                <div class="trip-card__option-icon" id="building"></div>
+                <span>24 people going</span>
+                <div class="trip-card__option-icon" id="heart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip-card-mini">
+          <div class="trip-card-mini__img"></div>
+          <div class="trip-card-mini__description">
+            <p class="trip-card-mini__statuse">Ongoing</p>
+            <p class="trip-card-mini__name">Trip to rome</p>
+            <p class="trip-card-mini__progress-text">
+              <span>40%</span>
+              complete
+            </p>
+            <div class="trip-card-mini__progress-bar"></div>
+          </div>
+        </div>
       </div>
 
-      <footer class="footer"></footer>
+      <div class="testimonials">
+        <h3 class="testimonials__header-section-text">Testimonals</h3>
+        <h2 class="testimonials__header-benefit-text">
+          What people say about us
+        </h2>
+        <div class="testimonials-card">
+          <div class="testimonials-card__img"></div>
+          <p class="testimonials-card__testimonial">
+            “On the Windows talking painted pasture yet its express parties use.
+            Sure last upon he same as knew next. Of believed or diverted no.”
+          </p>
+          <h3 class="testimonials__testimonial-author">Mike Taylor</h3>
+          <p class="testimonials__testimonial-located">Lahore, Pakistan</p>
+        </div>
+      </div>
+
+      <div class="logos-and-sbscr">
+        <h3 class="logos-and-sbscr__header-section-text">Top Selling</h3>
+        <div class="logos">
+          <div class="logos__container">
+            <img
+              src="common.blocks/logos-and-sbscr/logos/axon-airlines.png"
+              alt="axon airlines logo"
+            />
+          </div>
+          <div class="logos__container">
+            <img
+              src="common.blocks/logos-and-sbscr/logos/jetstar.png"
+              alt="jetstar logo"
+            />
+          </div>
+          <div class="logos__container">
+            <img
+              src="common.blocks/logos-and-sbscr/logos/expedia.png"
+              alt="expedia logo"
+            />
+          </div>
+          <div class="logos__container">
+            <img
+              src="common.blocks/logos-and-sbscr/logos/qantas.png"
+              alt="qantas logo"
+            />
+          </div>
+        </div>
+        <div class="sbscr">
+          <a class="sbscr__btn" href="https://example.com/">Subscribe</a>
+          <div class="sbscr__send-icon"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__logo">
+          <p class="footer__logo-jadoo">Jadoo.</p>
+          <p class="footer__logo-text">
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+        <div class="footer__company">
+          <h4 class="footer__head">Company</h4>
+          <a class="footer__link">About</a>
+          <a class="footer__link">Careers</a>
+          <a class="footer__link">Mobile</a>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__head">Contact</h4>
+          <a class="footer__link">Help/FAQ</a>
+          <a class="footer__link">Press</a>
+          <a class="footer__link">Affilates</a>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__head">More</h4>
+          <a class="footer__link">Airlinefees</a>
+          <a class="footer__link">Airline</a>
+          <a class="footer__link">Low fare tips</a>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://www.facebook.com/">
+            <div class="contact-links__icon-container">
+              <img
+                src="common.blocks/footer/contact-links/facebook-icon.svg"
+                alt="facebook icon"
+              />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/">
+            <div class="contact-links__icon-container">
+              <img
+                src="common.blocks/footer/contact-links/instagram-icon.svg"
+                alt="instagram icon"
+              />
+            </div>
+          </a>
+          <a href="https://twitter.com/">
+            <div class="contact-links__icon-container">
+              <img
+                src="common.blocks/footer/contact-links/twitter-icon.svg"
+                alt="twitter icon"
+              />
+            </div>
+          </a>
+          <a href="https://www.youtube.com/">
+            <div class="contact-links__icon-container">
+              <img
+                src="common.blocks/footer/contact-links/youtube-icon.svg"
+                alt="youtube icon"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div class="discover">
+          <p class="discover__text">Discover our app</p>
+          <div class="discover__container-group">
+            <a href="https://play.google.com/">
+              <div class="discover__container">
+                <img
+                  src="common.blocks/footer/discover/Google Play.png"
+                  alt="google play button"
+                />
+              </div>
+            </a>
+            <a href="https://www.apple.com/store/">
+              <div class="discover__container">
+                <img
+                  src="common.blocks/footer/discover/Play Store.png"
+                  alt="apple store button"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="copyright-law">
+          <p>All rights reserved@jadoo.co</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
