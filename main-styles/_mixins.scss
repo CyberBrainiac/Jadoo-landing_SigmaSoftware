@@ -1,10 +1,28 @@
+/*Background Images mixins*/
 @mixin backgroundImage($url) {
   background-image: url($url);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/*Head 1,2,3 mixins*/
+@mixin backgroundDecorePluses($url) {
+  @include backgroundImage($url);
+  position: absolute;
+  max-width: 155px;
+  height: 166px;
+}
+
+@mixin pseudoElemImg($url) {
+  @include backgroundImage($url);
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: 0;
+}
+
+/*Head 1,2,3,4,5 mixins*/
 @mixin head-1() {
   color: $h1-text-color;
   font-size: $h1-font-size;
@@ -59,7 +77,7 @@
   margin-right: 20px;
 }
 
-@mixin category-active-shadow {
+@mixin card-shadow() {
   box-shadow: 
     0px 0px 80px 0px rgba(0, 0, 0, 0.02),
     0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 

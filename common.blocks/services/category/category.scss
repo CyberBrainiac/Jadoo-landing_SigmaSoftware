@@ -8,15 +8,24 @@
   margin-top: 40px;
   position: relative;
 
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    display: none;
+  }
+
   &__img {
     width: 120px;
     height: 90px;
     margin: 0 auto
   }
 
-  & #radar { @include backgroundImage("../common.blocks/services/category/category_radar.png"); }
+  #radar { @include backgroundImage("../common.blocks/services/category/category_radar.png"); }
 
-  & #airplane { @include backgroundImage("../common.blocks/services/category/category_plane.png"); }
+  #airplane { @include backgroundImage("../common.blocks/services/category/category_plane.png"); }
+
+  #gear { @include backgroundImage("../common.blocks/services/category/category_gear.png"); }
+
+  #microphone { @include backgroundImage("../common.blocks/services/category/category_microphone.png"); }
 
   &__header-text {
     @include head-4();
@@ -49,7 +58,7 @@
   }
 
   &:hover {
-    @include category-active-shadow();
+    @include card-shadow();
 
     &::after {
       display: block;

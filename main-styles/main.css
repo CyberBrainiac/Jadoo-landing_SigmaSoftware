@@ -7,7 +7,8 @@
 }
 /*Colors*/
 /*Font and typography*/
-/*Head 1,2,3 mixins*/
+/*Background Images mixins*/
+/*Head 1,2,3,4,5 mixins*/
 /*Button mixins*/
 @-webkit-keyframes notTheBestFlight {
   80% {
@@ -41,6 +42,20 @@
     height: 30%;
   }
 }
+.page {
+  width: 100%;
+}
+.page .content {
+  background-image: url("../images/Decore-top-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top right;
+}
+.page .content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .logo {
   padding-left: 30px;
   position: relative;
@@ -177,6 +192,10 @@
   padding-bottom: 0;
 }
 
+.common-menu {
+  display: none;
+}
+
 .header {
   position: relative;
   display: -webkit-box;
@@ -190,13 +209,20 @@
 }
 
 .cta {
-  width: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   min-width: 170px;
-  margin: 0 auto;
   text-align: center;
-  position: relative;
   z-index: 1;
-  background-color: #FFF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .cta__find-more-button {
   display: block;
@@ -246,7 +272,10 @@
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
-.airplane__picture {
+.airplane #airplane-2 {
+  display: none;
+}
+.airplane__img {
   background-image: url("../images/airplane.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -254,7 +283,7 @@
   width: 115px;
   height: 100px;
 }
-.airplane__picture:hover {
+.airplane__img:hover {
   -webkit-animation: notTheBestFlight 3s linear 0s 1 normal none;
           animation: notTheBestFlight 3s linear 0s 1 normal none;
 }
@@ -262,6 +291,9 @@
 .hero {
   position: relative;
   text-align: left;
+}
+.hero__tegline {
+  display: none;
 }
 .hero__header-text {
   color: #181E4B;
@@ -273,15 +305,19 @@
   margin: 0 15px 40px 60px;
   padding-top: 60px;
 }
+.hero__description {
+  display: none;
+}
 .hero__background-image {
-  position: absolute;
-  top: 53vh;
-  left: 73vw;
-  width: 27vw;
-  height: 166px;
   background-image: url("../common.blocks/hero/hero-background-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  max-width: 155px;
+  height: 166px;
+  top: 53vh;
+  left: 73vw;
+  width: 27vw;
   background-position: initial;
 }
 
@@ -295,6 +331,9 @@
   margin-top: 40px;
   position: relative;
 }
+.category:nth-of-type(3), .category:nth-of-type(4) {
+  display: none;
+}
 .category__img {
   width: 120px;
   height: 90px;
@@ -307,6 +346,16 @@
 }
 .category #airplane {
   background-image: url("../common.blocks/services/category/category_plane.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.category #gear {
+  background-image: url("../common.blocks/services/category/category_gear.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.category #microphone {
+  background-image: url("../common.blocks/services/category/category_microphone.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -355,6 +404,7 @@
 }
 .services__header-section-text {
   padding-top: 20px;
+  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #5E6282;
@@ -380,4 +430,104 @@
   font-size: 18px;
   margin-top: 100px;
   margin-bottom: 80px;
+}
+
+.destination {
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079), 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+          box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079), 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+  width: 70.5vw;
+  min-width: 300px;
+  max-width: 315px;
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.destination__img {
+  height: 320px;
+  overflow: hidden;
+  border-radius: 24px 24px 0 0;
+}
+.destination__caption {
+  position: relative;
+  padding: 30px 10px 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  background-color: #FFF;
+  color: #5E6282;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  text-align: left;
+  border-radius: 0 0 24px 24px;
+}
+.destination__duration {
+  font-size: 16px;
+  position: relative;
+  padding-left: 30px;
+}
+.destination__duration::before {
+  background-image: url("../common.blocks/destinations/destination/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: 0;
+  background-position: center;
+  height: 100%;
+}
+
+.destinations {
+  position: relative;
+  text-align: center;
+}
+.destinations :nth-child(4) {
+  margin-top: 30px;
+}
+.destinations__header-section-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #5E6282;
+  font-size: 20px;
+  margin-top: 30px;
+  width: 25vw;
+  min-width: 77px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.destinations__header-benefit-text {
+  color: #14183E;
+  font-size: 40px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  width: 67vw;
+  min-width: 255px;
+  margin: 0 auto;
+  line-height: 52px;
+}
+.destinations__background-image {
+  background-image: url("../common.blocks/destinations/destinations-background-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  max-width: 155px;
+  height: 166px;
+  top: -20px;
+  left: 0;
+  width: 22vw;
+  background-position: right;
 }/*# sourceMappingURL=main.css.map */

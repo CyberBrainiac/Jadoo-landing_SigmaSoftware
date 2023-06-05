@@ -5,6 +5,10 @@
   position: relative;
   text-align: left;
 
+  &__tegline {
+    display: none;
+  }
+
   &__header-text {
     @include head-1();
     border-bottom: 1px solid $page-bg-color;
@@ -12,13 +16,15 @@
     padding-top: 60px;
   }
 
+  &__description {
+    display: none;
+  }
+
   &__background-image {
-    position: absolute;
+    @include backgroundDecorePluses("../common.blocks/hero/hero-background-plus.svg");
     top: 53vh;
     left: 73vw;
     width: 27vw;
-    height: 166px;
-    @include backgroundImage("../common.blocks/hero/hero-background-plus.svg");
     background-position: initial;
   }
 }

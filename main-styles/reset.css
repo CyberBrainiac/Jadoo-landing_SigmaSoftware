@@ -17,10 +17,8 @@ footer, header, nav, li
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-footer,
-header,
-nav {
+footer, header, nav 
+{
   display: block;
 }
 body {

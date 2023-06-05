@@ -1,11 +1,11 @@
 .cta {
-  width: 41%;
+  display: flex;
   min-width: 170px;
-  margin: 0 auto;
   text-align: center;
-  position: relative;
   z-index: 1;
-  background-color: $page-bg-color;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 
   &__find-more-button {
     @include cta-find-more-b();

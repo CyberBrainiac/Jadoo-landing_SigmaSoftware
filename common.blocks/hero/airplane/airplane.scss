@@ -4,7 +4,11 @@
   left: 1%;
   transform: translateY(-30px);
 
-  &__picture {
+  #airplane-2 {
+    display: none;
+  }
+
+  &__img {
     @include backgroundImage('../images/airplane.svg');
     background-size: cover;
     width: 115px;

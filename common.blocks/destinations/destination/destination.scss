@@ -1,0 +1,44 @@
+.destination {
+  @include card-shadow();
+  width: 70.5vw;
+  min-width: 300px;
+  max-width: 315px;
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-top: 70px;
+
+  &__img {
+    height: 320px;
+    overflow: hidden;
+    border-radius: 24px 24px 0 0;
+  }
+
+  &__caption {
+    position: relative;
+    padding: 30px 10px 20px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 25px;
+    background-color: $page-bg-color;
+    color: $main-text-color;
+    font-family: $Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    text-align: left;
+    border-radius: 0 0 24px 24px;
+  }
+
+  &__duration {
+    font-size: 16px;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      @include pseudoElemImg("../common.blocks/destinations/destination/vector.svg");
+      background-position: center;
+      height: 100%;
+    }
+  }
+}

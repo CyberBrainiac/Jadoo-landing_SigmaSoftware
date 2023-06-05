@@ -2,6 +2,12 @@
   width: 100%;
 
   .content {
-    background-image: url(../images/Decore-top-right.svg);
+    @include backgroundImage("../images/Decore-top-right.svg");
+    background-position: top right;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

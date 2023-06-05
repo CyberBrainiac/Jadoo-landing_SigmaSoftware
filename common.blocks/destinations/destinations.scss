@@ -1,0 +1,35 @@
+@import "destination/destination.scss";
+
+.destinations {
+  position: relative;
+  text-align: center;
+
+  & :nth-child(4) {
+    margin-top: 30px;
+  }
+
+  &__header-section-text {
+    @include head-3();
+    margin-top: 30px;
+    width: 25vw;
+    min-width: 77px;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+
+  &__header-benefit-text {
+    @include head-2();
+    width: 67vw;
+    min-width: 255px;
+    margin: 0 auto;
+    line-height: 52px;
+  }
+
+  &__background-image {
+    @include backgroundDecorePluses("../common.blocks/destinations/destinations-background-plus.svg");
+    top: -20px;
+    left: 0;
+    width: 22vw;
+    background-position: right;
+  }
+}
