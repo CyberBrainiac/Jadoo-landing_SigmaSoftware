@@ -36,6 +36,7 @@
   font-size: $h2-font-size;
   font-family: $Volkhov;
   font-weight: 700;
+  line-height: 52px;
 }
 
 @mixin head-3() {
@@ -50,6 +51,14 @@
   font-weight: 600;
   color: $h4-text-color;
   font-size: 20px;
+}
+
+@mixin head-5($color, $fontSize) {
+  font-family: $Poppins;
+  line-height: 124.5%;
+  color: $color;
+  font-size: $fontSize;
+  font-weight: 700;
 }
 
 

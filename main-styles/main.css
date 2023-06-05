@@ -301,7 +301,6 @@
   font-family: "Volkhov", serif;
   font-weight: 700;
   line-height: 89px;
-  border-bottom: 1px solid #FFF;
   margin: 0 15px 40px 60px;
   padding-top: 60px;
 }
@@ -403,19 +402,21 @@
   margin-top: 90px;
 }
 .services__header-section-text {
-  padding-top: 20px;
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #5E6282;
   font-size: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 .services__header-benefit-text {
-  padding-top: 40px;
   color: #14183E;
   font-size: 40px;
   font-family: "Volkhov", serif;
   font-weight: 700;
+  line-height: 52px;
+  padding-top: 40px;
+  text-transform: capitalize;
 }
 .services__mobile-menu {
   color: #737373;
@@ -514,6 +515,7 @@
   font-size: 40px;
   font-family: "Volkhov", serif;
   font-weight: 700;
+  line-height: 52px;
   width: 67vw;
   min-width: 255px;
   margin: 0 auto;
@@ -530,4 +532,116 @@
   left: 0;
   width: 22vw;
   background-position: right;
+}
+
+.three-steps {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  -webkit-column-gap: 5%;
+     -moz-column-gap: 5%;
+          column-gap: 5%;
+  row-gap: 50px;
+  margin: 60px auto 100px auto;
+  grid-template-areas: "c1r1 c2r1" "c1r2 c2r2" "c1r3 c2r3";
+}
+.three-steps__icon {
+  width: 50px;
+  height: 50px;
+}
+.three-steps__head-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 124.5%;
+  color: #5E6282;
+  font-size: "16px";
+  font-weight: 700;
+  text-align: left;
+}
+.three-steps__common-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #5E6282;
+  line-height: 124.5%;
+  font-size: 16px;
+  text-align: left;
+}
+.three-steps #step3-icon-1 {
+  background-image: url("../common.blocks/book-trip/three-steps/step-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: c1r1;
+}
+.three-steps #step3-text-1 {
+  grid-area: c2r1;
+}
+.three-steps #step3-icon-2 {
+  background-image: url("../common.blocks/book-trip/three-steps/step-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: c1r2;
+}
+.three-steps #step3-text-2 {
+  grid-area: c2r2;
+}
+.three-steps #step3-icon-3 {
+  background-image: url("../common.blocks/book-trip/three-steps/step-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: c1r3;
+}
+.three-steps #step3-text-3 {
+  grid-area: c2r3;
+}
+
+.trip-card {
+  position: relative;
+  max-width: 370px;
+  width: 73vw;
+  background-color: #FFF;
+  border-radius: 26px;
+  -webkit-box-shadow: 40px -20px 100px 0px rgba(89, 177, 230, 0.4);
+          box-shadow: 40px -20px 100px 0px rgba(89, 177, 230, 0.4);
+  padding: 20px;
+  margin-left: 10%;
+}
+.trip-card__img {
+  border: 1px solid #000000;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.book-trip {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.book-trip__header-benefit-text {
+  color: #14183E;
+  font-size: 40px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 40px;
+  text-transform: capitalize;
+  width: 74vw;
+  margin: 120px auto 0 auto;
+}
+.book-trip__marked-word {
+  display: block;
+}
+.book-trip__background-image {
+  background-image: url("../common.blocks/book-trip/book-trip-background-plus-top.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  max-width: 155px;
+  height: 166px;
+  background-position: right;
+  width: 24vw;
+  top: -150px;
+  left: 0;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

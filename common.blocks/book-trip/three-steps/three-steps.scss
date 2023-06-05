@@ -1,0 +1,59 @@
+.three-steps {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 5%;
+  row-gap: 50px;
+  margin: 60px auto 100px auto;
+  grid-template-areas:
+    "c1r1 c2r1"
+    "c1r2 c2r2"
+    "c1r3 c2r3";
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__head-text {
+    @include head-5($main-text-color, "16px");
+    text-align: left;
+  }
+
+  &__common-text {
+    font-family: $Poppins;
+    font-weight: 400;
+    color: $main-text-color;
+    line-height: 124.5%;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  #step3-icon-1 {
+    @include backgroundImage("../common.blocks/book-trip/three-steps/step-1.svg");
+    grid-area: c1r1;
+  }
+
+  #step3-text-1 {
+    grid-area: c2r1;
+  }
+
+  #step3-icon-2 {
+    @include backgroundImage("../common.blocks/book-trip/three-steps/step-2.svg");
+    grid-area: c1r2;
+  }
+
+  #step3-text-2 {
+    grid-area: c2r2;
+  }
+
+  #step3-icon-3 {
+    @include backgroundImage("../common.blocks/book-trip/three-steps/step-3.svg");
+    grid-area: c1r3;
+  }
+
+  #step3-text-3 {
+    grid-area: c2r3;
+  }
+}

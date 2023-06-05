@@ -1,0 +1,29 @@
+@import "three-steps/three-steps.scss";
+@import "trip-card/trip-card.scss";
+
+.book-trip {
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &__header-benefit-text {
+    @include head-2();
+    font-size: 40px;
+    text-transform: capitalize;
+    width: 74vw;
+    margin: 120px auto 0 auto;
+  }
+
+  &__marked-word {
+    display: block
+  }
+
+  &__background-image {
+    @include backgroundDecorePluses("../common.blocks/book-trip/book-trip-background-plus-top.svg");
+    background-position: right;
+    width: 24vw;
+    top: -150px;
+    left: 0;
+    z-index: -1;
+  }
+}
