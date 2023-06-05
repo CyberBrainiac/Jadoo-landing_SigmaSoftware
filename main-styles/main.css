@@ -612,6 +612,18 @@
   border-radius: 24px;
   overflow: hidden;
 }
+.trip-card__img img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+.trip-card__name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  letter-spacing: 1.5%;
+  text-align: left;
+}
 
 .book-trip {
   position: relative;

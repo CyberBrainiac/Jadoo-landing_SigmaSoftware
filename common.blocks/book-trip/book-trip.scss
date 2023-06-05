@@ -15,11 +15,13 @@
   }
 
   &__marked-word {
-    display: block
+    display: block;
   }
 
   &__background-image {
-    @include backgroundDecorePluses("../common.blocks/book-trip/book-trip-background-plus-top.svg");
+    @include backgroundDecorePluses(
+      "../common.blocks/book-trip/book-trip-background-plus-top.svg"
+    );
     background-position: right;
     width: 24vw;
     top: -150px;

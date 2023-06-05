@@ -1,0 +1,9 @@
+.logo {
+  padding-left: 30px;
+  position: relative;
+  z-index: 3;
+}
+.logo img {
+  width: 7.1875rem;
+  height: auto;
+}/*# sourceMappingURL=logo.css.map */
