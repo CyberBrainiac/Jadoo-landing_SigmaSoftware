@@ -22,37 +22,6 @@
   left: 0;
 }
 
-/*Head 1,2,3,4,5 mixins*/
-@mixin head-1() {
-  color: $h1-text-color;
-  font-size: $h1-font-size;
-  font-family: $Volkhov;
-  font-weight: 700;
-  line-height: 89px;
-}
-
-@mixin head-2() {
-  color: $h2-text-color;
-  font-size: $h2-font-size;
-  font-family: $Volkhov;
-  font-weight: 700;
-  line-height: 52px;
-}
-
-@mixin head-3() {
-  font-family: $Poppins;
-  font-weight: 600;
-  color: $main-text-color;
-  font-size: 20px;
-}
-
-@mixin head-4() {
-  font-family: $Open-Sans;
-  font-weight: 600;
-  color: $h4-text-color;
-  font-size: 20px;
-}
-
 @mixin head-5($color, $fontSize) {
   font-family: $Poppins;
   line-height: 124.5%;
@@ -61,8 +30,6 @@
   font-weight: 700;
 }
 
-
-/*Button mixins*/
 @mixin cta-find-more-b() {
   display: block;
   background-color: #F1A501;
@@ -70,7 +37,7 @@
   border-radius: 10px;
   font-family: $Google-Sans-medium;
   font-size: 18px;
-  padding: 16px 0;
+  padding: 20px 0;
   width: 170px;
   box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
 }

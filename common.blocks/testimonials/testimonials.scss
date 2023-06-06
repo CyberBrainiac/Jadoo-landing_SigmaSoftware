@@ -1,0 +1,13 @@
+@import "testimonials-card/testimonials-card.scss";
+
+.testimonials {
+  width: 82vw;
+  text-align: center;
+  margin: 0 auto;
+
+  &__header-benefit-text {
+    margin: 30px auto 60px auto;
+    text-transform: capitalize;
+    width: 67vw;
+  }
+}

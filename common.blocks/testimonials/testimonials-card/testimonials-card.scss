@@ -1,0 +1,33 @@
+.testimonials-card {
+  @include card-shadow();
+  font-family: $Poppins;
+  color: $main-text-color;
+  font-weight: 500;
+
+  &__img {
+    @include backgroundImage("../common.blocks/testimonials/testimonials-card/smiling-men.png");
+    width: 68px;
+    height: 68px;
+    margin: 0 auto;
+  }
+
+  &__testimonial {
+    line-height: 32px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  &__testimonial-author {
+    font-weight: 600;
+    line-height: 27px;
+    font-size: 18px;
+  }
+
+  &__testimonial-located {
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+    margin: 5px 0 80px 0;
+    padding-bottom: 20px;
+  }
+}

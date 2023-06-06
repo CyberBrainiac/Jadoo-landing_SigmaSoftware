@@ -28,7 +28,6 @@
   #microphone { @include backgroundImage("../common.blocks/services/category/category_microphone.png"); }
 
   &__header-text {
-    @include head-4();
     margin-top: 25px;
     margin-bottom: 20px;
   }

@@ -8,8 +8,6 @@
 /*Colors*/
 /*Font and typography*/
 /*Background Images mixins*/
-/*Head 1,2,3,4,5 mixins*/
-/*Button mixins*/
 @-webkit-keyframes notTheBestFlight {
   80% {
     -webkit-transform: translate(30vw, -30vh);
@@ -54,6 +52,33 @@
 .page .content img {
   max-width: 100%;
   height: auto;
+}
+.page .content h1 {
+  color: #181E4B;
+  font-size: 48px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  line-height: 89px;
+}
+.page .content h2 {
+  color: #14183E;
+  font-size: 40px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  line-height: 52px;
+}
+.page .content h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #5E6282;
+  font-size: 20px;
+  line-height: 30px;
+}
+.page .content h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #1E1D4C;
+  font-size: 20px;
 }
 
 .logo {
@@ -231,7 +256,7 @@
   border-radius: 10px;
   font-family: "Google-Sans-medium", sans-serif;
   font-size: 18px;
-  padding: 16px 0;
+  padding: 20px 0;
   width: 170px;
   -webkit-box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
           box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
@@ -296,11 +321,6 @@
   display: none;
 }
 .hero__header-text {
-  color: #181E4B;
-  font-size: 48px;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  line-height: 89px;
   margin: 0 15px 40px 60px;
   padding-top: 60px;
 }
@@ -359,10 +379,6 @@
   background-position: center;
 }
 .category__header-text {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  color: #1E1D4C;
-  font-size: 20px;
   margin-top: 25px;
   margin-bottom: 20px;
 }
@@ -402,19 +418,10 @@
   margin-top: 90px;
 }
 .services__header-section-text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #5E6282;
-  font-size: 20px;
   padding-top: 20px;
   text-transform: uppercase;
 }
 .services__header-benefit-text {
-  color: #14183E;
-  font-size: 40px;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  line-height: 52px;
   padding-top: 40px;
   text-transform: capitalize;
 }
@@ -500,10 +507,6 @@
   margin-top: 30px;
 }
 .destinations__header-section-text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #5E6282;
-  font-size: 20px;
   margin-top: 30px;
   width: 25vw;
   min-width: 77px;
@@ -511,11 +514,6 @@
   line-height: 30px;
 }
 .destinations__header-benefit-text {
-  color: #14183E;
-  font-size: 40px;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  line-height: 52px;
   width: 67vw;
   min-width: 255px;
   margin: 0 auto;
@@ -549,14 +547,16 @@
 .three-steps__icon {
   width: 50px;
   height: 50px;
+  margin: auto 0;
 }
 .three-steps__head-text {
   font-family: "Poppins", sans-serif;
   line-height: 124.5%;
   color: #5E6282;
-  font-size: "16px";
+  font-size: 16px;
   font-weight: 700;
   text-align: left;
+  margin-bottom: 6px;
 }
 .three-steps__common-text {
   font-family: "Poppins", sans-serif;
@@ -604,6 +604,12 @@
           box-shadow: 40px -20px 100px 0px rgba(89, 177, 230, 0.4);
   padding: 20px;
   margin-left: 10%;
+  color: #84829A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 124.5%;
+  text-align: left;
+  font-size: 16px;
 }
 .trip-card__img {
   border: 1px solid #000000;
@@ -616,26 +622,104 @@
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
-.trip-card__name {
+.trip-card__title {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
   line-height: 124.5%;
-  letter-spacing: 1.5%;
-  text-align: left;
+  color: #080809;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 15px 0 10px 0;
+  font-weight: 500;
+}
+.trip-card__duration-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.trip-card__duration {
+  width: 20%;
+}
+.trip-card__author {
+  margin-left: 10%;
+}
+.trip-card__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.trip-card__options .icon-leaf {
+  background-image: url("../common.blocks/book-trip/trip-card/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.trip-card__options .icon-map {
+  background-image: url("../common.blocks/book-trip/trip-card/map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.trip-card__options .icon-send {
+  background-image: url("../common.blocks/book-trip/trip-card/send.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.trip-card__option-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+.trip-card__social-metrics {
+  position: relative;
+  padding-left: 30px;
+  letter-spacing: -0.4px;
+}
+.trip-card__social-metrics::before {
+  background-image: url("../common.blocks/book-trip/trip-card/building.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+.trip-card__social-metrics::after {
+  background-image: url("../common.blocks/book-trip/trip-card/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  left: 90%;
+}
+
+.trip-card-mini {
+  display: none;
 }
 
 .book-trip {
   position: relative;
   text-align: center;
   width: 100%;
+  margin-bottom: 160px;
 }
 .book-trip__header-benefit-text {
-  color: #14183E;
-  font-size: 40px;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  line-height: 52px;
   font-size: 40px;
   text-transform: capitalize;
   width: 74vw;
@@ -644,7 +728,7 @@
 .book-trip__marked-word {
   display: block;
 }
-.book-trip__background-image {
+.book-trip__background-image-top {
   background-image: url("../common.blocks/book-trip/book-trip-background-plus-top.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -656,4 +740,93 @@
   top: -150px;
   left: 0;
   z-index: -1;
+}
+.book-trip__background-image-bottom {
+  background-image: url("../common.blocks/book-trip/book-trip-background-plus-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  max-width: 155px;
+  height: 166px;
+  width: 37vw;
+  top: 91%;
+  left: 64%;
+}
+
+.testimonials-card {
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079), 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+          box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079), 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+  font-family: "Poppins", sans-serif;
+  color: #5E6282;
+  font-weight: 500;
+}
+.testimonials-card__img {
+  background-image: url("../common.blocks/testimonials/testimonials-card/smiling-men.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+}
+.testimonials-card__testimonial {
+  line-height: 32px;
+  text-align: left;
+  font-size: 16px;
+}
+.testimonials-card__testimonial-author {
+  font-weight: 600;
+  line-height: 27px;
+  font-size: 18px;
+}
+.testimonials-card__testimonial-located {
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 14px;
+  margin: 5px 0 80px 0;
+  padding-bottom: 20px;
+}
+
+.testimonials {
+  width: 82vw;
+  text-align: center;
+  margin: 0 auto;
+}
+.testimonials__header-benefit-text {
+  margin: 30px auto 60px auto;
+  text-transform: capitalize;
+  width: 67vw;
+}
+
+.logos :nth-child(1) img, .logos :nth-child(2) img {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.logos :nth-child(4) img {
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+.logos :nth-child(3) {
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079), 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+          box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079), 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.logos :nth-child(3) img {
+  -webkit-transform: translateY(-36px);
+          transform: translateY(-36px);
+}
+.logos__container {
+  width: 40vw;
+  height: 80px;
+  margin: 0 auto;
+  -webkit-filter: brightness(100%) grayscale(100%);
+          filter: brightness(100%) grayscale(100%);
+  overflow: hidden;
+}
+.logos__container img {
+  margin: 0 auto;
+}
+
+.logos-and-sbscr {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

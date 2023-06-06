@@ -1,13 +1,14 @@
 @import "three-steps/three-steps.scss";
 @import "trip-card/trip-card.scss";
+@import "trip-card-mini/trip-card-mini.scss";
 
 .book-trip {
   position: relative;
   text-align: center;
   width: 100%;
+  margin-bottom: 160px;
 
   &__header-benefit-text {
-    @include head-2();
     font-size: 40px;
     text-transform: capitalize;
     width: 74vw;
@@ -18,7 +19,7 @@
     display: block;
   }
 
-  &__background-image {
+  &__background-image-top {
     @include backgroundDecorePluses(
       "../common.blocks/book-trip/book-trip-background-plus-top.svg"
     );
@@ -27,5 +28,12 @@
     top: -150px;
     left: 0;
     z-index: -1;
+  }
+
+  &__background-image-bottom {
+    @include backgroundDecorePluses("../common.blocks/book-trip/book-trip-background-plus-bottom.svg");
+    width: 37vw;
+    top: 91%;
+    left: 64%;
   }
 }

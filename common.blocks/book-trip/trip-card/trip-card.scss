@@ -7,6 +7,12 @@
   box-shadow: 40px -20px 100px 0px rgba(89, 177, 230, 0.4);
   padding: 20px;
   margin-left: 10%;
+  color: #84829A;
+  font-family: $Poppins;
+  font-weight: 500;
+  line-height: 124.5%;
+  text-align: left;
+  font-size: 16px;
 
   &__img {
     border: 1px solid #000000;
@@ -14,20 +20,64 @@
     border-radius: 24px;
     overflow: hidden;
 
-    img {
-      transform: scale(1.08);
+    img { transform: scale(1.08); }
+  }
+
+  &__title {
+    @include head-5(#080809, 18px);
+    letter-spacing: 0.5px;
+    margin: 15px 0 10px 0;
+    font-weight: 500;
+  }
+
+  &__duration-container { display: flex; }
+  &__duration { width: 20%; }
+  &__author { margin-left: 10%; }
+
+  &__options {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .icon-leaf {
+      @include backgroundImage("../common.blocks/book-trip/trip-card/leaf.svg");
+    }
+
+    .icon-map {
+      @include backgroundImage("../common.blocks/book-trip/trip-card/map.svg");
+    }
+
+    .icon-send {
+      @include backgroundImage("../common.blocks/book-trip/trip-card/send.svg");
     }
   }
 
-  &__caption {
+  &__option-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
   }
 
-  &__name {
-    font-family: $Poppins;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 124.5%;
-    letter-spacing: 1.5%;
-    text-align: left;
+  &__social-metrics { 
+    position: relative;
+    padding-left: 30px;
+    letter-spacing: -0.4px;
+
+    &::before { 
+      @include pseudoElemImg("../common.blocks/book-trip/trip-card/building.svg");
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+    }
+
+    &::after {
+      @include pseudoElemImg("../common.blocks/book-trip/trip-card/heart.svg");
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      left: 90%;
+    }
   }
 }

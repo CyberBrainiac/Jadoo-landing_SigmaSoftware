@@ -9,7 +9,6 @@
   }
 
   &__header-section-text {
-    @include head-3();
     margin-top: 30px;
     width: 25vw;
     min-width: 77px;
@@ -18,7 +17,6 @@
   }
 
   &__header-benefit-text {
-    @include head-2();
     width: 67vw;
     min-width: 255px;
     margin: 0 auto;

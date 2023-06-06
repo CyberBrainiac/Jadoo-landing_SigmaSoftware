@@ -9,5 +9,36 @@
       max-width: 100%;
       height: auto;
     }
+
+    h1 {
+      color: $h1-text-color;
+      font-size: $h1-font-size;
+      font-family: $Volkhov;
+      font-weight: 700;
+      line-height: 89px;
+    }
+    
+    h2 {
+      color: $h2-text-color;
+      font-size: $h2-font-size;
+      font-family: $Volkhov;
+      font-weight: 700;
+      line-height: 52px;
+    }
+    
+    h3 {
+      font-family: $Poppins;
+      font-weight: 600;
+      color: $main-text-color;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    
+    h4 {
+      font-family: $Open-Sans;
+      font-weight: 700;
+      color: $h4-text-color;
+      font-size: 20px;
+    }
   }
 }
