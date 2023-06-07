@@ -1,0 +1,26 @@
+.discover {
+  width: 52%;
+  margin: 0 auto;
+  
+  &__text {
+    text-align: left;
+    font-family: $Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124.5%;
+    letter-spacing: 0.05px;
+    color: $main-text-color;
+  }
+
+  &__container-group {
+    display: flex;
+    column-gap: 7px;
+    margin: 15px 0;
+  }
+
+  &__container {
+    display: flex;
+    border-radius: 17.5px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,13 @@
+.contact-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  width: 52%;
+  margin: 50px auto 40px auto;
+
+  &__icon-container {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -2,7 +2,7 @@
   width: 100%;
 
   .content {
-    @include backgroundImage("../images/Decore-top-right.svg");
+    // @include backgroundImage("../images/Decore-top-right.svg");
     background-position: top right;
 
     img {
@@ -39,6 +39,10 @@
       font-weight: 700;
       color: $h4-text-color;
       font-size: 20px;
+    }
+
+    a {
+      cursor: pointer;
     }
   }
 }

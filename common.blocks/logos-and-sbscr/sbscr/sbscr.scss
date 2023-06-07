@@ -1,0 +1,48 @@
+.sbscr {
+  position: relative;
+
+  &__get-information {
+    display: none;
+  }
+
+  &__input-email {
+    display: none;
+  }
+
+  &__send-btn {
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translateY(-50%);
+    background: linear-gradient(225deg, rgba(116,125,239,1) 0%, rgba(94,59,225,1) 100%);
+    width: 61px;
+    height: 56px;
+    border-radius: 50%;
+  }
+
+  &__send-icon {
+    @include backgroundImage("../common.blocks/logos-and-sbscr/sbscr/send-icon.svg");
+    width: 100%;
+    height: 100%;
+    transform: translate(3px, -2px);
+  }
+
+  &__left-bg-decore {
+    display: none;
+  }
+
+  &__right-bg-decore {
+    display: none;
+  }
+
+  input[type="submit"] {
+    @include cta-find-more-b();
+    background: linear-gradient(180deg, rgba(255,148,109,1) 0%, rgba(255,125,104,1) 67%);
+    font-family: $Open-Sans;
+    font-weight: 600;
+    font-size: 17px;
+    box-shadow: none;
+    border: none;
+    margin: 50px auto;
+  }
+}

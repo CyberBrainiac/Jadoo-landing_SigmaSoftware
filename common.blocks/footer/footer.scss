@@ -1,0 +1,48 @@
+@import "./contact-links/contact-links.scss";
+@import "./discover/discover.scss";
+@import "./copyright-law/copyright-law.scss";
+
+.footer {
+  background-color: $header-bg-color;
+  padding-top: 20px;
+  font-family: $Poppins;
+  font-weight: 500;
+  text-align: left;
+
+  &__logo-container {
+    width: 50%;
+    margin-left: 18.8%;
+    margin-bottom: 60px;
+  }
+
+  &__logo {
+    color: $h1-text-color;
+    font-size: 44px;
+    line-height: 66px;
+    margin-bottom: 20px;
+  }
+
+  &__logo-description {
+    color: $main-text-color;
+    font-size: 13px;
+    line-height: 124.5%;
+  }
+
+  &__details {
+    width: 28%;
+    margin-left: 18.8%;
+  }
+
+  &__head {
+    @include head-5(#080809, 21px);
+    margin: 40px 0 20px 0;
+  }
+
+  &__link {
+    display: block;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: $main-text-color;
+    margin-top: 10px;
+  }
+}

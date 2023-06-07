@@ -1,8 +1,11 @@
-@keyframes notTheBestFlight{
-  80% {
-    transform:  translate(30vw, -30vh);
+@keyframes notTheBestFlight-mobile {
+  70% {
+    transform:  translate(30vw, -15vh) scale(0.7);
+  }
+  85% {
+    transform:  translate(42vw, -18vh) rotate(40deg) scale(0.65);
   }
   100% {
-    transform:  translate(33vw, -33vh) rotate(80deg);
+    transform:  translate(80vw, 100vh);
   }
 }
