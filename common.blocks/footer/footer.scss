@@ -57,6 +57,10 @@
     height: 181px;
     background-size: 113px 181px;
     background-position: 0px 0px;
-    background-image: radial-gradient(120% 100% at 120% 90%, rgba(213, 174, 228, 0.8) 0%, #fff 100%);
+    background-image: radial-gradient(
+      120% 100% at 120% 90%,
+      rgba(213, 174, 228, 0.4) 0%,
+      #fff 100%
+    );
   }
 }
