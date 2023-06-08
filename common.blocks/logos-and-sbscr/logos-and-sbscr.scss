@@ -1,4 +1,8 @@
 @import "logos/logos.scss";
+@import "send/send.scss";
 @import "sbscr/sbscr.scss";
 
-.logos-and-sbscr { text-align: center; }
+.logos-and-sbscr { 
+  text-align: center;
+  position: relative;
+ }

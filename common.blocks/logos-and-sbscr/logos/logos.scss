@@ -4,7 +4,7 @@
     transform: translateY(-15px);
   }
 
-  & :nth-child(4) img {
+  & :nth-child(4) img, & :nth-child(5) img {
     transform: translateY(25px);
   }
 
@@ -16,6 +16,8 @@
       transform: translateY(-36px); 
     }
   }
+
+  & :nth-child(5) { display: none; }
 
   &__container {
     width: 40vw;
