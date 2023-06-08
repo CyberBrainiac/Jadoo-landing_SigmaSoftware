@@ -10,8 +10,8 @@
     height: 30%;
   }
 
-  div.sbscr__send-btn {
-    left: 80%;
+  div.send {
+    left: 79%;
   }
 
   div.discover {
@@ -113,8 +113,9 @@
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    background-color: transparent;
 
-    h5 { margin: 0; }
+    &__head { margin: 0 0 20px 0; }
 
     &__logo-container {
       grid-row: 1 / 1;
