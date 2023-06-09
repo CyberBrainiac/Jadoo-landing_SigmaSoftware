@@ -4,6 +4,8 @@
   color: $main-text-color;
   font-weight: 500;
   border-radius: 10px;
+  grid-column: 2/2;
+  grid-row: 1/1;
 
   &__img {
     @include backgroundImage(

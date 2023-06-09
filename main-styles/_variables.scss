@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap');
 
 @font-face {
   font-family: 'Google-Sans-medium';
@@ -21,10 +21,13 @@ $h4-text-color: #1E1D4C;
 /*Font and typography*/
 $h1-font-size: 48px;
 $h2-font-size: 40px;
+$h3-font-size: 20px;
 $Volkhov: 'Volkhov', serif;
 $Google-Sans-medium: 'Google-Sans-medium', sans-serif; 
 $Open-Sans: 'Open Sans', sans-serif;
 $Poppins: 'Poppins', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
 
-
+/*Dimentions*/
+$additional-cta-width-for-mobile: 30px;
+$additional-cta-height-for-mobile: 10px;

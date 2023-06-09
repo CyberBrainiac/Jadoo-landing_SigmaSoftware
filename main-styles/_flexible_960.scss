@@ -1,0 +1,211 @@
+
+
+@media screen and (min-width: 959.88px) {
+  $additional-cta-width-for-mobile: 0px;
+  $additional-cta-height-for-mobile: 0px;
+
+  .content {
+    @include backgroundImage("../images/Decore-top-right.svg");
+    background-position: top right;
+  }
+
+  nav.dropdown-menu {
+    display: none;
+  }
+
+  nav.common-menu {
+    display: flex;
+  }
+
+  div.hero {
+    height: 90vh;
+    margin: auto 8vw auto 9.8vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    p.hero__tegline {
+      display: block;
+    }
+
+    h1.hero__header-text {
+      margin: 0;
+      padding: 0;
+    }
+
+    p.hero__description {
+      display: block;
+    }
+
+    &__grid-wrap {
+      grid-column: 1/1;
+      grid-row: 1/1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cta {
+      flex-direction: row;
+      margin-top: 30px;
+
+      &__find-more-button {
+        padding-top: calc(20px + $additional-cta-height-for-mobile);
+        padding-bottom: calc(20px + $additional-cta-height-for-mobile);
+        width: calc(170px + $additional-cta-width-for-mobile);
+      }
+      &__play-demo-container { margin: 0 0 0 3%; }
+    }
+
+    &__background-decore { display: block; }
+
+    &__background-image-pluses {
+      top: 100%;
+      left: 100%;
+      grid-column: 2/2;
+      grid-row: 1/1;
+      transform: translate(-80%, 60%);
+    }
+
+    #airplane-1 {
+      top: 10vw;
+      left: 46vw;
+    }
+  
+    #airplane-2 {
+      display: block;
+      top: 20vw;
+      left: 76vw;
+    }
+  }
+
+  div.destinations {
+    width: 78%;
+    margin: 0 auto;
+
+    &__grid-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 50px;
+    }
+
+    &__background-image {
+      background-image: none;
+      @include backgroundImage("../common.blocks/destinations/background-decore.svg");
+      width: 96px;
+      height: 252px;
+      position: absolute;
+      top: 70%;
+      left: 92%;
+    }
+
+    .destination { margin: 0 auto; }
+
+    #rome {
+      grid-column: 1/3;
+      grid-row: 1/1;
+    }
+
+    #london {
+      grid-column: 1/1;
+      grid-row: 2/2;
+    }
+
+    #full-europe {
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+  }
+
+  div.book-trip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 78vw;
+    margin: 120px auto;
+
+    &__grid-wrap {
+      grid-column: 1/1;
+      grid-row: 1/1;
+      text-align: left;
+    }
+
+    h2.book-trip__header-benefit-text {
+      width: initial;
+      margin: 0;
+
+      span {
+        display: inline;
+      }
+    }
+
+    .trip-card {
+      grid-column: 2/2;
+      grid-row: 1/1;
+      margin: 40px auto 0 auto;
+    }
+
+    .trip-card-mini {
+      top: 56%;
+      left: 76%;
+    }
+
+    .three-steps { margin: 25px 0 0 0; }
+
+    &__background-image-top { display: none; }
+    &__background-image-bottom { display: none; }
+  }
+
+  div.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10%;
+    text-align: left;
+  }
+
+  h2.testimonials__header-benefit-text {
+    width: auto;
+    margin: 0;
+  }
+
+  div.testimonials-card {
+    position: relative;
+
+    &__img {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin: 0;
+      transform: translateX(-100%);
+    }
+  }
+
+  div.logos-and-sbscr__background-image-pluses {
+    @include backgroundDecorePluses("../common.blocks/logos-and-sbscr/logos-sbscr-background-plus.svg");
+    content: '';
+    background-position: right;
+    top: 100%;
+    left: 100%;
+    transform: translate(-120%, -50%);
+    width: 9vh;
+  }
+
+  div.sbscr {
+    input[type=submit] { 
+      padding-top: calc(20px + $additional-cta-height-for-mobile);
+      padding-bottom: calc(20px + $additional-cta-height-for-mobile);
+      width: calc(170px + $additional-cta-width-for-mobile);
+    }
+
+    &__right-bg-decore {
+      left: 82%;
+      top: -5%;
+    }
+
+    &__left-bg-decore { transform: translate(5%, -70%); }
+  }
+}
+

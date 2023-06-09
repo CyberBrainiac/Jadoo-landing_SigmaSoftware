@@ -1,8 +1,11 @@
 .airplane {
   position: absolute;
-  top: 4%;
-  left: 1%;
   transform: translateY(-30px);
+
+  #airplane-1 {
+    top: 4%;
+    left: 1%;
+  }
 
   #airplane-2 {
     display: none;

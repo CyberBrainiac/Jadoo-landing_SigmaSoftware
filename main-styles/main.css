@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Volkhov:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap");
 @font-face {
   font-family: "Google-Sans-medium";
   src: url("../fonts/Google-Sans/GoogleSans-Medium.woff") format("woff"), url("../fonts/Google-Sans/GoogleSans-Medium.woff2") format("woff2"), url("../fonts/Google-Sans/GoogleSans-Medium.ttf") format("truetype");
@@ -8,6 +8,7 @@
 }
 /*Colors*/
 /*Font and typography*/
+/*Dimentions*/
 /*Background Images mixins*/
 @-webkit-keyframes notTheBestFlight-mobile {
   70% {
@@ -37,8 +38,52 @@
             transform: translate(80vw, 100vh);
   }
 }
+.page {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #181E4B;
+  font-size: 48px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  line-height: 89px;
+}
+
+h2 {
+  color: #14183E;
+  font-size: 40px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #5E6282;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #1E1D4C;
+  font-size: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 411.88px) {
-  div.hero__background-image {
+  div.hero__background-image-pluses {
     top: 66vh;
   }
   div.category::after {
@@ -72,7 +117,7 @@
     left: 86%;
   }
   div.sbscr {
-    width: 87vw;
+    width: 82vw;
     min-height: 295px;
     height: 40vh;
     max-height: 410px;
@@ -253,7 +298,13 @@
     padding: 0;
   }
 }
-@media screen and (min-width: 767.88px) {
+@media screen and (min-width: 759.88px) {
+  div.logo {
+    padding-left: 9.8vw;
+  }
+  div.header-controls {
+    margin-right: 8vw;
+  }
   div.services__category-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -314,47 +365,216 @@
     left: 87%;
   }
 }
-.page {
-  width: 100%;
+@media screen and (min-width: 959.88px) {
+  .content {
+    background-image: url("../images/Decore-top-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top right;
+  }
+  nav.dropdown-menu {
+    display: none;
+  }
+  nav.common-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.hero {
+    height: 90vh;
+    margin: auto 8vw auto 9.8vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  div.hero p.hero__tegline {
+    display: block;
+  }
+  div.hero h1.hero__header-text {
+    margin: 0;
+    padding: 0;
+  }
+  div.hero p.hero__description {
+    display: block;
+  }
+  div.hero__grid-wrap {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.hero .cta {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+  }
+  div.hero .cta__find-more-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 170px;
+  }
+  div.hero .cta__play-demo-container {
+    margin: 0 0 0 3%;
+  }
+  div.hero__background-decore {
+    display: block;
+  }
+  div.hero__background-image-pluses {
+    top: 100%;
+    left: 100%;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    -webkit-transform: translate(-80%, 60%);
+            transform: translate(-80%, 60%);
+  }
+  div.hero #airplane-1 {
+    top: 10vw;
+    left: 46vw;
+  }
+  div.hero #airplane-2 {
+    display: block;
+    top: 20vw;
+    left: 76vw;
+  }
+  div.destinations {
+    width: 78%;
+    margin: 0 auto;
+  }
+  div.destinations__grid-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+  }
+  div.destinations__background-image {
+    background-image: none;
+    background-image: url("../common.blocks/destinations/background-decore.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 96px;
+    height: 252px;
+    position: absolute;
+    top: 70%;
+    left: 92%;
+  }
+  div.destinations .destination {
+    margin: 0 auto;
+  }
+  div.destinations #rome {
+    grid-column: 1/3;
+    grid-row: 1/1;
+  }
+  div.destinations #london {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  div.destinations #full-europe {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+  div.book-trip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 78vw;
+    margin: 120px auto;
+  }
+  div.book-trip__grid-wrap {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    text-align: left;
+  }
+  div.book-trip h2.book-trip__header-benefit-text {
+    width: initial;
+    margin: 0;
+  }
+  div.book-trip h2.book-trip__header-benefit-text span {
+    display: inline;
+  }
+  div.book-trip .trip-card {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin: 40px auto 0 auto;
+  }
+  div.book-trip .trip-card-mini {
+    top: 56%;
+    left: 76%;
+  }
+  div.book-trip .three-steps {
+    margin: 25px 0 0 0;
+  }
+  div.book-trip__background-image-top {
+    display: none;
+  }
+  div.book-trip__background-image-bottom {
+    display: none;
+  }
+  div.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    -webkit-column-gap: 10%;
+       -moz-column-gap: 10%;
+            column-gap: 10%;
+    text-align: left;
+  }
+  h2.testimonials__header-benefit-text {
+    width: auto;
+    margin: 0;
+  }
+  div.testimonials-card {
+    position: relative;
+  }
+  div.testimonials-card__img {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  div.logos-and-sbscr__background-image-pluses {
+    background-image: url("../common.blocks/logos-and-sbscr/logos-sbscr-background-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    max-width: 155px;
+    height: 166px;
+    content: "";
+    background-position: right;
+    top: 100%;
+    left: 100%;
+    -webkit-transform: translate(-120%, -50%);
+            transform: translate(-120%, -50%);
+    width: 9vh;
+  }
+  div.sbscr input[type=submit] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 170px;
+  }
+  div.sbscr__right-bg-decore {
+    left: 82%;
+    top: -5%;
+  }
+  div.sbscr__left-bg-decore {
+    -webkit-transform: translate(5%, -70%);
+            transform: translate(5%, -70%);
+  }
 }
-.page .content {
-  background-position: top right;
-}
-.page .content img {
-  max-width: 100%;
-  height: auto;
-}
-.page .content h1 {
-  color: #181E4B;
-  font-size: 48px;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  line-height: 89px;
-}
-.page .content h2 {
-  color: #14183E;
-  font-size: 40px;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  line-height: 52px;
-}
-.page .content h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #5E6282;
-  font-size: 20px;
-  line-height: 30px;
-}
-.page .content h4 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  color: #1E1D4C;
-  font-size: 20px;
-}
-.page .content a {
-  cursor: pointer;
-}
-
 .logo {
   padding-left: 30px;
   position: relative;
@@ -493,6 +713,55 @@
 
 .common-menu {
   display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 6vw;
+     -moz-column-gap: 6vw;
+          column-gap: 6vw;
+  font-family: "Google-Sans-medium", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #212832;
+}
+.common-menu__content {
+  width: 32vw;
+  min-width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.common-menu__content a {
+  color: #212832;
+}
+.common-menu__sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 198px;
+  width: 13.75vw;
+  min-width: 160px;
+}
+.common-menu__sign-up-btn {
+  padding: 10px 20px;
+  border: 1px solid #212832;
+  border-radius: 5px;
 }
 
 .header {
@@ -522,7 +791,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 170px;
   text-align: center;
   z-index: 1;
   -webkit-box-orient: vertical;
@@ -540,8 +808,9 @@
   border-radius: 10px;
   font-family: "Google-Sans-medium", sans-serif;
   font-size: 18px;
-  padding: 20px 0;
-  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 200px;
   -webkit-box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
           box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
 }
@@ -576,10 +845,12 @@
 
 .airplane {
   position: absolute;
-  top: 4%;
-  left: 1%;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
+}
+.airplane #airplane-1 {
+  top: 4%;
+  left: 1%;
 }
 .airplane #airplane-2 {
   display: none;
@@ -603,6 +874,12 @@
 }
 .hero__tegline {
   display: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #DF6951;
+  text-transform: uppercase;
 }
 .hero__header-text {
   margin: 0 15px 40px 60px;
@@ -610,8 +887,20 @@
 }
 .hero__description {
   display: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5E6282;
 }
-.hero__background-image {
+.hero__background-decore {
+  display: none;
+  background-image: url("../common.blocks/hero/Traveller.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.hero__background-image-pluses {
   background-image: url("../common.blocks/hero/hero-background-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -705,9 +994,10 @@
 .services__header-section-text {
   padding-top: 20px;
   text-transform: uppercase;
+  font-size: 18px;
 }
 .services__header-benefit-text {
-  padding-top: 40px;
+  padding-top: 20px;
   text-transform: capitalize;
 }
 .services__mobile-menu {
@@ -800,9 +1090,6 @@
   text-align: center;
   margin-top: 80px;
 }
-.destinations :nth-child(4) {
-  margin-top: 30px;
-}
 .destinations__header-section-text {
   margin-top: 30px;
   width: 25vw;
@@ -815,6 +1102,7 @@
   min-width: 255px;
   margin: 0 auto;
   line-height: 52px;
+  margin-bottom: 30px;
 }
 .destinations__background-image {
   background-image: url("../common.blocks/destinations/destinations-background-plus.svg");
@@ -835,10 +1123,10 @@
   width: 95%;
   grid-template-columns: 50px 1fr;
   grid-template-rows: repeat(3, 1fr);
-  -webkit-column-gap: 5%;
-     -moz-column-gap: 5%;
-          column-gap: 5%;
-  row-gap: 50px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 40px;
   margin: 60px auto 100px auto;
   grid-template-areas: "c1r1 c2r1" "c1r2 c2r2" "c1r3 c2r3";
 }
@@ -896,6 +1184,7 @@
   position: relative;
   max-width: 370px;
   width: 73vw;
+  max-height: 400px;
   background-color: #FFF;
   border-radius: 26px;
   -webkit-box-shadow: 40px -20px 100px 0px rgba(89, 177, 230, 0.4);
@@ -1124,6 +1413,8 @@
   color: #5E6282;
   font-weight: 500;
   border-radius: 10px;
+  grid-column: 2/2;
+  grid-row: 1/1;
 }
 .testimonials-card__img {
   background-image: url("../common.blocks/testimonials/testimonials-card/smiling-men.png");
@@ -1158,10 +1449,19 @@
   margin: 0 auto;
   margin-bottom: 90px;
 }
+.testimonials__header-section-text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
 .testimonials__header-benefit-text {
   margin: 30px auto 60px auto;
   text-transform: capitalize;
   width: 67vw;
+}
+.testimonials__header-wrap {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  width: 28.4vw;
 }
 
 .logos :nth-child(1) img, .logos :nth-child(2) img {
@@ -1241,14 +1541,18 @@
 .sbscr__right-bg-decore {
   display: none;
 }
+.sbscr__background-image-pluses {
+  display: none;
+}
 .sbscr input[type=submit] {
   background-color: #F1A501;
   color: #FFF;
   border-radius: 10px;
   font-family: "Google-Sans-medium", sans-serif;
   font-size: 18px;
-  padding: 20px 0;
-  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 200px;
   -webkit-box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
           box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 148, 109)), color-stop(67%, rgb(255, 125, 104)));

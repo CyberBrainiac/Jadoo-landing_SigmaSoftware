@@ -24,8 +24,8 @@
             <li class="common-menu__elem"><a href="#">Booking</a></li>
           </ul>
           <div class="common-menu__sign-up">
-            <span id="login">Login</span>
-            <span id="sign-up">Sign up</span>
+            <span class="common-menu__login">Login</span>
+            <span class="common-menu__sign-up-btn">Sign up</span>
           </div>
         </nav>
 
@@ -56,35 +56,37 @@
       </header>
 
       <div class="hero">
-        <p class="hero__tegline">Best Destinations around the world</p>
-        <h1 class="hero__header-text">
-          Travel, enjoy and live a new and full life
-        </h1>
-        <p class="hero__description">
-          Built Wicket longer admire do barton vanity itself do in it. Preferred
-          to sportsmen it engrossed listening. Park gate sell they west hard for
-          the.
-        </p>
-        <div class="hero__background-image"></div>
-
-        <div class="cta">
-          <a
-            href="http://reminders.findmoore.net/"
-            class="cta__find-more-button"
-            >Find out more</a
-          >
-          <div class="cta__play-demo-container">
-            <div class="cta__play-demo-button"></div>
-            <span>Play Demo</span>
+        <div class="hero__grid-wrap">
+          <p class="hero__tegline">Best Destinations around the world</p>
+          <h1 class="hero__header-text">
+            Travel, enjoy and live a new and full life
+          </h1>
+          <p class="hero__description">
+            Built Wicket longer admire do barton vanity itself do in it. Preferred
+            to sportsmen it engrossed listening. Park gate sell they west hard for
+            the.
+          </p>
+  
+          <div class="cta">
+            <a href="http://reminders.findmoore.net/">
+              <div class="cta__find-more-button">Find out more</div>
+            </a>
+            <div class="cta__play-demo-container">
+              <div class="cta__play-demo-button"></div>
+              <span>Play Demo</span>
+            </div>
           </div>
         </div>
+        <div class="hero__background-image-pluses"></div>
 
-        <div class="airplane">
-          <div class="airplane__img" id="airplane-1"></div>
+        <div class="airplane" id="airplane-1">
+          <div class="airplane__img"></div>
         </div>
-        <div class="airplane">
-          <div class="airplane__img" id="airplane-2"></div>
+        <div class="airplane" id="airplane-2">
+          <div class="airplane__img"></div>
         </div>
+
+        <div class="hero__background-decore"></div>
       </div>
 
       <div class="services">
@@ -131,82 +133,86 @@
         <h2 class="destinations__header-benefit-text">Top Destination</h2>
         <div class="destinations__background-image"></div>
 
-        <div class="destination">
-          <figure class="destination__img" id="rome">
-            <img
-              src="common.blocks/destinations/destination/Coliseum.png"
-              alt="ancient Coliseum in sun shines with clear sky"
-            />
-          </figure>
-          <div class="destination__caption">
-            <p class="destination__name">Rome, Italty</p>
-            <p class="destination__price">$5,42k</p>
-            <p class="destination__duration">10 Days Trip</p>
+        <div class="destinations__grid-wrap">
+          <div class="destination" id="rome">
+            <figure class="destination__img">
+              <img
+                src="common.blocks/destinations/destination/Coliseum.png"
+                alt="ancient Coliseum in sun shines with clear sky"
+              />
+            </figure>
+            <div class="destination__caption">
+              <p class="destination__name">Rome, Italty</p>
+              <p class="destination__price">$5,42k</p>
+              <p class="destination__duration">10 Days Trip</p>
+            </div>
           </div>
-        </div>
-        <div class="destination">
-          <figure class="destination__img" id="london">
-            <img
-              src="common.blocks/destinations/destination/Big-Ben.png"
-              alt="sophisticated Big Ben in evening"
-            />
-          </figure>
-          <div class="destination__caption">
-            <p class="destination__name">London, UK</p>
-            <p class="destination__price">$4,2k</p>
-            <p class="destination__duration">12 Days Trip</p>
+          <div class="destination" id="london">
+            <figure class="destination__img">
+              <img
+                src="common.blocks/destinations/destination/Big-Ben.png"
+                alt="sophisticated Big Ben in evening"
+              />
+            </figure>
+            <div class="destination__caption">
+              <p class="destination__name">London, UK</p>
+              <p class="destination__price">$4,2k</p>
+              <p class="destination__duration">12 Days Trip</p>
+            </div>
           </div>
-        </div>
-        <div class="destination">
-          <figure class="destination__img" id="london">
-            <img
-              src="common.blocks/destinations/destination/Helsinki-Cathedral.png"
-              alt="impressive neoclassical masterpiece Helsinki Cathedral"
-            />
-          </figure>
-          <div class="destination__caption">
-            <p class="destination__name">Full Europe</p>
-            <p class="destination__price">$15k</p>
-            <p class="destination__duration">28 Days Trip</p>
+          <div class="destination" id="full-europe">
+            <figure class="destination__img">
+              <img
+                src="common.blocks/destinations/destination/Helsinki-Cathedral.png"
+                alt="impressive neoclassical masterpiece Helsinki Cathedral"
+              />
+            </figure>
+            <div class="destination__caption">
+              <p class="destination__name">Full Europe</p>
+              <p class="destination__price">$15k</p>
+              <p class="destination__duration">28 Days Trip</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="book-trip">
-        <h2 class="book-trip__header-benefit-text">
-          Book your next
-          <span class="book-trip__marked-word">trip</span>
-          in 3 easy steps
-        </h2>
-        <div class="book-trip__background-image-top"></div>
-        <div class="book-trip__background-image-bottom"></div>
-
-        <div class="three-steps">
-          <div class="three-steps__icon" id="step3-icon-1"></div>
-          <div class="three-steps_text-content" id="step3-text-1">
-            <p class="three-steps__head-text">Choose Destination</p>
-            <p class="three-steps__common-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-              tortor tempus.
-            </p>
-          </div>
-
-          <div class="three-steps__icon" id="step3-icon-2"></div>
-          <div class="three-steps_text-content" id="step3-text-2">
-            <p class="three-steps__head-text">Make Payment</p>
-            <p class="three-steps__common-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-              tortor tempus.
-            </p>
-          </div>
-
-          <div class="three-steps__icon" id="step3-icon-3"></div>
-          <div class="three-steps_text-content" id="step3-text-3">
-            <p class="three-steps__head-text">Reach Airport on Selected Date</p>
-            <p class="three-steps__common-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-              tortor tempus.
-            </p>
+        <div class="book-trip__grid-wrap">
+          <h2 class="book-trip__header-benefit-text">
+            Book your next
+            <span class="book-trip__marked-word">trip</span>
+            in 3 easy steps
+          </h2>
+          <div class="book-trip__background-image-top"></div>
+          <div class="book-trip__background-image-bottom"></div>
+  
+          <div class="three-steps">
+            <div class="three-steps__icon" id="step3-icon-1"></div>
+            <div class="three-steps_text-content" id="step3-text-1">
+              <p class="three-steps__head-text">Choose Destination</p>
+              <p class="three-steps__common-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+  
+            <div class="three-steps__icon" id="step3-icon-2"></div>
+            <div class="three-steps_text-content" id="step3-text-2">
+              <p class="three-steps__head-text">Make Payment</p>
+              <p class="three-steps__common-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+  
+            <div class="three-steps__icon" id="step3-icon-3"></div>
+            <div class="three-steps_text-content" id="step3-text-3">
+              <p class="three-steps__head-text">Reach Airport on Selected Date</p>
+              <p class="three-steps__common-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -255,10 +261,13 @@
       </div>
 
       <div class="testimonials">
-        <h3 class="testimonials__header-section-text">Testimonals</h3>
-        <h2 class="testimonials__header-benefit-text">
-          What people say about us
-        </h2>
+        <div class="testimonials__header-wrap">
+          <h3 class="testimonials__header-section-text">Testimonals</h3>
+          <h2 class="testimonials__header-benefit-text">
+            What people say about us
+          </h2>
+        </div>
+
         <div class="testimonials-card">
           <div class="testimonials-card__img"></div>
           <p class="testimonials-card__testimonial">
@@ -271,6 +280,7 @@
       </div>
 
       <div class="logos-and-sbscr">
+        <div class="logos-and-sbscr__background-image-pluses"></div>
         <h3>Top Selling</h3>
         <div class="logos">
           <div class="logos__container">

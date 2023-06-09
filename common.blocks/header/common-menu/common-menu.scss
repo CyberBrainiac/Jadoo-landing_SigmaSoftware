@@ -1,3 +1,37 @@
 .common-menu {
   display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 6vw;
+  font-family: $Google-Sans-medium;
+  font-weight: 500;
+  font-size: 17px;
+  color: #212832;
+
+  &__content {
+    width: 32vw;
+    min-width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      color: #212832;
+    }
+  }
+
+  &__sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 198px;
+    width: 13.75vw;
+    min-width: 160px;
+  }
+
+  &__sign-up-btn {
+    padding: 10px 20px;
+    border: 1px solid #212832;
+    border-radius: 5px;
+  }
 }

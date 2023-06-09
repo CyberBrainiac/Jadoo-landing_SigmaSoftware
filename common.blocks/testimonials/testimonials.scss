@@ -6,9 +6,20 @@
   margin: 0 auto;
   margin-bottom: 90px;
 
+  &__header-section-text { 
+    font-size: 18px;
+    text-transform: uppercase;
+   }
+
   &__header-benefit-text {
     margin: 30px auto 60px auto;
     text-transform: capitalize;
     width: 67vw;
+  }
+
+  &__header-wrap {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    width: 28.4vw;
   }
 }

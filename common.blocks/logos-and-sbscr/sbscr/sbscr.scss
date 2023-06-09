@@ -17,6 +17,10 @@
     display: none;
   }
 
+  &__background-image-pluses {
+    display: none;
+  }
+
   input[type="submit"] {
     @include cta-find-more-b();
     background: linear-gradient(180deg, rgba(255,148,109,1) 0%, rgba(255,125,104,1) 67%);
