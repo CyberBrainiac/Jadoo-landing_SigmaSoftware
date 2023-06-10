@@ -8,15 +8,14 @@
   margin-top: 70px;
 
   &:hover {
-    box-shadow: 
-    0px 0px 80px 0px rgba(0, 0, 0, 0.22),
-    0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.1152), 
-    0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.1121),
-    0px 20px 13px 0px rgba(0, 0, 0, 0.11),
-    0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0179),
-    0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0148);
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.22),
+      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0181852),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0151481),
+      0px 20px 13px rgba(0, 0, 0, 0.017),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00985185),
+      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00781481);
 
-    .destination__img img{
+    .destination__img img {
       transform: scale(1.15);
     }
   }
@@ -26,7 +25,9 @@
     overflow: hidden;
     border-radius: 24px 24px 0 0;
 
-    img { transition: 0.3s; }
+    img {
+      transition: 0.3s;
+    }
   }
 
   &__caption {
@@ -52,7 +53,9 @@
     padding-left: 30px;
 
     &::before {
-      @include pseudoElemImg("../common.blocks/destinations/destination/vector.svg");
+      @include pseudoElemImg(
+        "../common.blocks/destinations/destination/vector.svg"
+      );
       background-position: center;
       height: 100%;
     }

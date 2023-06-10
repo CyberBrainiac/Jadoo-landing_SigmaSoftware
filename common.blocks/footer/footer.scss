@@ -46,21 +46,4 @@
     color: $main-text-color;
     margin-top: 10px;
   }
-
-  &__decore {
-    position: absolute;
-    z-index: -1;
-    top: 100%;
-    left: 100%;
-    transform: translate(-100%, -100%);
-    width: 113px;
-    height: 181px;
-    background-size: 113px 181px;
-    background-position: 0px 0px;
-    background-image: radial-gradient(
-      120% 100% at 120% 90%,
-      rgba(213, 174, 228, 0.4) 0%,
-      #fff 100%
-    );
-  }
 }

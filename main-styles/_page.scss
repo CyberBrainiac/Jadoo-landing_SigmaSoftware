@@ -1,5 +1,43 @@
 .page {
   width: 100%;
+
+  .content {
+    position: relative;
+
+    &__decore-top {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      // transform: translate(-100%, -100%);
+      width: 186px;
+      height: 527px;
+      background-size: 186px 527px;
+      background-position: 0px 0px;
+      background-image: radial-gradient(
+        120% 100% at 0% 30%,
+        rgba(213, 174, 228, 0.3) 0%,
+        #fff 50%
+      );
+    }
+
+    &__decore-bottom {
+      position: absolute;
+      z-index: -1;
+      top: 100%;
+      left: 100%;
+      transform: translate(-100%, -100%);
+      width: 226px;
+      height: 304px;
+      background-size: 226px 304px;
+      background-position: 0px 0px;
+      background-image: radial-gradient(
+        120% 100% at 120% 90%,
+        rgba(213, 174, 228, 0.4) 0%,
+        #fff 100%
+      );
+    }
+  }
 }
 
 img {
@@ -41,5 +79,3 @@ h4 {
 a {
   cursor: pointer;
 }
-
-
