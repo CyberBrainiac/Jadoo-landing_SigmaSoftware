@@ -1,8 +1,50 @@
 @import "logos/logos.scss";
-@import "send/send.scss";
 @import "sbscr/sbscr.scss";
 
 .logos-and-sbscr {
   text-align: center;
   position: relative;
+
+  &__layer-0 {
+    width: 82vw;
+    max-width: 1170px;
+    min-height: 295px;
+    height: 40vh;
+    max-height: 410px;
+    margin: 80px 0 80px 50%;
+    transform: translateX(-50%);
+  }
+
+  &__send {
+    top: 18%;
+    right: 14%;
+    position: absolute;
+    background: linear-gradient(
+      225deg,
+      rgba(116, 125, 239, 1) 0%,
+      rgba(94, 59, 225, 1) 100%
+    );
+    width: 61px;
+    height: 56px;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      background-color: $page-bg-color;
+      z-index: -1;
+    }
+  }
+
+  &__icon {
+    @include backgroundImage("../common.blocks/logos-and-sbscr/send-icon.svg");
+    width: 100%;
+    height: 100%;
+    transform: translate(3px, -2px);
+  }
 }

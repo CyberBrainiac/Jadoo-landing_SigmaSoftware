@@ -1,5 +1,4 @@
-
-@media screen and (min-width: 425.88px) {
+@media screen and (min-width: 411.88px) {
   div.discover {
     .discover__text {
       text-align: center;
@@ -7,5 +6,9 @@
     &__container-group {
       justify-content: space-between;
     }
+  }
+
+  div.logos-and-sbscr__send {
+    right: 0;
   }
 }

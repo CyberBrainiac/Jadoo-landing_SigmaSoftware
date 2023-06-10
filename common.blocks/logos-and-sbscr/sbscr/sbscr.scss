@@ -23,7 +23,11 @@
 
   input[type="submit"] {
     @include cta-find-more-b();
-    background: linear-gradient(180deg, rgba(255,148,109,1) 0%, rgba(255,125,104,1) 67%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 148, 109, 1) 0%,
+      rgba(255, 125, 104, 1) 67%
+    );
     font-family: $Open-Sans;
     font-weight: 600;
     font-size: 17px;

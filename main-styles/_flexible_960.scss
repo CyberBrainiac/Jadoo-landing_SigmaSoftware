@@ -2,6 +2,18 @@
   $additional-cta-width-for-mobile: 0px;
   $additional-cta-height-for-mobile: 0px;
 
+  h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
   .content {
     @include backgroundImage("../images/Decore-top-right.svg");
     background-position: top right;
@@ -33,6 +45,7 @@
 
     p.hero__description {
       display: block;
+      margin-top: 20px;
     }
 
     &__grid-wrap {
@@ -213,10 +226,6 @@
       transform: translate(-100%, -50%);
       width: 153px;
       z-index: -1;
-    }
-
-    .send {
-      top: 45%;
     }
 
     .sbscr {

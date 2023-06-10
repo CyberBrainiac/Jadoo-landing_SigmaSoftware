@@ -9,9 +9,9 @@
     display: none;
     font-family: $Poppins;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
-    color: #DF6951;
+    color: #df6951;
     text-transform: uppercase;
   }
 
@@ -29,14 +29,16 @@
     color: $main-text-color;
   }
 
-  &__background-decore { 
+  &__background-decore {
     display: none;
     @include backgroundImage("../common.blocks/hero/Traveller.png");
     background-size: contain;
   }
 
   &__background-image-pluses {
-    @include backgroundDecorePluses("../common.blocks/hero/hero-background-plus.svg");
+    @include backgroundDecorePluses(
+      "../common.blocks/hero/hero-background-plus.svg"
+    );
     top: 53vh;
     left: 73vw;
     width: 27vw;

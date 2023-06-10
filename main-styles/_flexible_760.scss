@@ -1,4 +1,12 @@
 @media screen and (min-width: 759.88px) {
+  h1 {
+    font-size: 66px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
   div.logo {
     padding-left: 9.8vw;
   }
@@ -73,10 +81,5 @@
       grid-column: 3/3;
       grid-row: 2/2;
     }
-  }
-
-  div.send {
-    top: 44%;
-    left: 87%;
   }
 }

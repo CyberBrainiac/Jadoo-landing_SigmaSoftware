@@ -118,14 +118,17 @@ a {
     width: 38%;
     height: 30%;
   }
-  div.send {
-    left: 79%;
+  div.logos-and-sbscr__send {
+    top: 20%;
+    right: -9%;
+    width: 51px;
+    height: 46px;
   }
   div.discover {
     width: 70%;
   }
 }
-@media screen and (min-width: 425.88px) {
+@media screen and (min-width: 411.88px) {
   div.discover .discover__text {
     text-align: center;
   }
@@ -134,22 +137,26 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  div.logos-and-sbscr__send {
+    right: 0;
+  }
 }
 @media screen and (min-width: 599.88px) {
+  h1 {
+    font-size: 57px;
+  }
+  h2 {
+    font-size: 42px;
+  }
   div.trip-card-mini {
     display: grid;
   }
-  div.send {
-    top: 62%;
-    left: 86%;
+  div.logos-and-sbscr__send {
+    top: -20px;
+    right: -20px;
   }
   div.sbscr {
-    width: 82vw;
-    max-width: 1170px;
-    min-height: 295px;
     height: 40vh;
-    max-height: 410px;
-    margin: 80px auto 80px auto;
     background: rgba(223, 215, 249, 0.2);
     border-radius: 129px 20px 20px 20px;
     overflow: hidden;
@@ -279,16 +286,15 @@ a {
   div.footer__details {
     width: 50%;
     margin: 0;
+    padding-left: 15%;
   }
   div.footer :nth-of-type(2) {
     grid-column: 1/1;
     grid-row: 2/2;
-    padding-left: 15%;
   }
   div.footer :nth-of-type(3) {
     grid-column: 1/1;
     grid-row: 3/5;
-    padding-left: 15%;
   }
   div.footer :nth-of-type(4) {
     grid-column: 2/2;
@@ -300,7 +306,7 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 10px;
+    padding-left: 10%;
     margin: 0;
     width: 70%;
   }
@@ -308,6 +314,7 @@ a {
     grid-column: 2/2;
     grid-row: 4/4;
     width: 70%;
+    padding-left: 10%;
   }
   div.footer .discover .discover__text {
     text-align: left;
@@ -327,6 +334,12 @@ a {
   }
 }
 @media screen and (min-width: 759.88px) {
+  h1 {
+    font-size: 66px;
+  }
+  h2 {
+    font-size: 44px;
+  }
   div.logo {
     padding-left: 9.8vw;
   }
@@ -388,12 +401,17 @@ a {
     grid-column: 3/3;
     grid-row: 2/2;
   }
-  div.send {
-    top: 44%;
-    left: 87%;
-  }
 }
 @media screen and (min-width: 959.88px) {
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 46px;
+  }
+  h3 {
+    font-size: 18px;
+  }
   .content {
     background-image: url("../images/Decore-top-right.svg");
     background-repeat: no-repeat;
@@ -424,6 +442,7 @@ a {
   }
   div.hero p.hero__description {
     display: block;
+    margin-top: 20px;
   }
   div.hero__grid-wrap {
     grid-column: 1/1;
@@ -602,9 +621,6 @@ a {
     width: 153px;
     z-index: -1;
   }
-  div.logos-and-sbscr .send {
-    top: 45%;
-  }
   div.logos-and-sbscr .sbscr input[type=submit] {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -621,8 +637,17 @@ a {
   }
 }
 @media screen and (min-width: 1199.88px) {
+  h1 {
+    font-size: 84px;
+  }
+  h2 {
+    font-size: 48px;
+  }
   nav.common-menu {
     padding-left: 15vw;
+  }
+  div.hero p.hero__tegline {
+    font-size: 20px;
   }
   div.hero__background-image-pluses {
     -webkit-transform: translate(-80%, 10%);
@@ -793,6 +818,9 @@ a {
   }
 }
 @media screen and (min-width: 1439.88px) {
+  h2 {
+    font-size: 50px;
+  }
   div.book-trip {
     -webkit-column-gap: 10%;
        -moz-column-gap: 10%;
@@ -1076,7 +1104,7 @@ a {
 
 #airplane-1 {
   top: 4%;
-  left: 1%;
+  left: 2%;
 }
 
 #airplane-2 {
@@ -1091,9 +1119,9 @@ a {
   display: none;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
-  color: #DF6951;
+  color: #df6951;
   text-transform: uppercase;
 }
 .hero__header-text {
@@ -1209,7 +1237,7 @@ a {
 .services__header-section-text {
   padding-top: 20px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
 }
 .services__header-benefit-text {
   padding-top: 20px;
@@ -1712,36 +1740,6 @@ a {
   margin-top: 30px;
 }
 
-.send {
-  position: absolute;
-  top: 82.5%;
-  left: 76%;
-  background: linear-gradient(225deg, rgb(116, 125, 239) 0%, rgb(94, 59, 225) 100%);
-  width: 61px;
-  height: 56px;
-  border-radius: 50%;
-}
-.send__icon {
-  background-image: url("../common.blocks/logos-and-sbscr/send/send-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate(3px, -2px);
-          transform: translate(3px, -2px);
-}
-.send::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  background-color: #FFF;
-  z-index: -1;
-}
-
 .sbscr {
   position: relative;
 }
@@ -1785,6 +1783,45 @@ a {
 .logos-and-sbscr {
   text-align: center;
   position: relative;
+}
+.logos-and-sbscr__layer-0 {
+  width: 82vw;
+  max-width: 1170px;
+  min-height: 295px;
+  height: 40vh;
+  max-height: 410px;
+  margin: 80px 0 80px 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.logos-and-sbscr__send {
+  top: 18%;
+  right: 14%;
+  position: absolute;
+  background: linear-gradient(225deg, rgb(116, 125, 239) 0%, rgb(94, 59, 225) 100%);
+  width: 61px;
+  height: 56px;
+  border-radius: 50%;
+}
+.logos-and-sbscr__send::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: -1;
+}
+.logos-and-sbscr__icon {
+  background-image: url("../common.blocks/logos-and-sbscr/send-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(3px, -2px);
+          transform: translate(3px, -2px);
 }
 
 .contact-links {
