@@ -1705,7 +1705,6 @@ a {
 .testimonials__header-wrap {
   grid-column: 1/1;
   grid-row: 1/1;
-  width: 28.4vw;
 }
 
 .logos :nth-child(1) img, .logos :nth-child(2) img {
